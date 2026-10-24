@@ -1,0 +1,1489 @@
+[
+  {
+    "questionId": "s06-01-client-server-admin-role-q01",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Граница клиентской ответственности",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q01-section",
+      "s06-01-client-server-admin-role-q01-concept",
+      "s06-01-client-server-admin-role-q01-explanation",
+      "s06-01-client-server-admin-role-q01-logic",
+      "s06-01-client-server-admin-role-q01-changed",
+      "s06-01-client-server-admin-role-q01-changed-result",
+      "s06-01-client-server-admin-role-q01-notebook",
+      "s06-01-client-server-admin-role-q01-practice-1",
+      "s06-01-client-server-admin-role-q01-practice-1-code-1",
+      "s06-01-client-server-admin-role-q01-practice-1-check",
+      "s06-01-client-server-admin-role-q01-case-input-1",
+      "s06-01-client-server-admin-role-q01-case",
+      "s06-01-client-server-admin-role-q01-T01-slide",
+      "s06-01-client-server-admin-role-q01-T02-slide",
+      "s06-01-client-server-admin-role-q01-T03-slide",
+      "s06-01-client-server-admin-role-q01-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q01-logic",
+      "s06-01-client-server-admin-role-q01-case",
+      "s06-01-client-server-admin-role-q01-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-01-client-server-admin-role-q02",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Граница серверной ответственности",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q02-section",
+      "s06-01-client-server-admin-role-q02-concept",
+      "s06-01-client-server-admin-role-q02-explanation",
+      "s06-01-client-server-admin-role-q02-logic",
+      "s06-01-client-server-admin-role-q02-changed",
+      "s06-01-client-server-admin-role-q02-changed-result",
+      "s06-01-client-server-admin-role-q02-notebook",
+      "s06-01-client-server-admin-role-q02-case-input-1",
+      "s06-01-client-server-admin-role-q02-case",
+      "s06-01-client-server-admin-role-q02-T01-slide",
+      "s06-01-client-server-admin-role-q02-T02-slide",
+      "s06-01-client-server-admin-role-q02-T03-slide",
+      "s06-01-client-server-admin-role-q02-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q02-logic",
+      "s06-01-client-server-admin-role-q02-case",
+      "s06-01-client-server-admin-role-q02-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-01-client-server-admin-role-q03",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Сеанс и соединение",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q03-section",
+      "s06-01-client-server-admin-role-q03-concept",
+      "s06-01-client-server-admin-role-q03-explanation",
+      "s06-01-client-server-admin-role-q03-logic",
+      "s06-01-client-server-admin-role-q03-changed",
+      "s06-01-client-server-admin-role-q03-changed-result",
+      "s06-01-client-server-admin-role-q03-notebook",
+      "s06-01-client-server-admin-role-q03-practice-2",
+      "s06-01-client-server-admin-role-q03-practice-2-code-1",
+      "s06-01-client-server-admin-role-q03-practice-2-check",
+      "s06-01-client-server-admin-role-q03-case-input-1",
+      "s06-01-client-server-admin-role-q03-case",
+      "s06-01-client-server-admin-role-q03-T01-slide",
+      "s06-01-client-server-admin-role-q03-T02-slide",
+      "s06-01-client-server-admin-role-q03-T03-slide",
+      "s06-01-client-server-admin-role-q03-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q03-logic",
+      "s06-01-client-server-admin-role-q03-case",
+      "s06-01-client-server-admin-role-q03-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-01-client-server-admin-role-q04",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Запрос и ответ сервера",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q04-section",
+      "s06-01-client-server-admin-role-q04-concept",
+      "s06-01-client-server-admin-role-q04-explanation",
+      "s06-01-client-server-admin-role-q04-logic",
+      "s06-01-client-server-admin-role-q04-changed",
+      "s06-01-client-server-admin-role-q04-changed-result",
+      "s06-01-client-server-admin-role-q04-notebook",
+      "s06-01-client-server-admin-role-q04-case-input-1",
+      "s06-01-client-server-admin-role-q04-case",
+      "s06-01-client-server-admin-role-q04-T01-slide",
+      "s06-01-client-server-admin-role-q04-T02-slide",
+      "s06-01-client-server-admin-role-q04-T03-slide",
+      "s06-01-client-server-admin-role-q04-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q04-logic",
+      "s06-01-client-server-admin-role-q04-case",
+      "s06-01-client-server-admin-role-q04-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-01-client-server-admin-role-q05",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Роль администратора",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q05-section",
+      "s06-01-client-server-admin-role-q05-concept",
+      "s06-01-client-server-admin-role-q05-explanation",
+      "s06-01-client-server-admin-role-q05-logic",
+      "s06-01-client-server-admin-role-q05-changed",
+      "s06-01-client-server-admin-role-q05-changed-result",
+      "s06-01-client-server-admin-role-q05-notebook",
+      "s06-01-client-server-admin-role-q05-case-input-1",
+      "s06-01-client-server-admin-role-q05-case",
+      "s06-01-client-server-admin-role-q05-T01-slide",
+      "s06-01-client-server-admin-role-q05-T02-slide",
+      "s06-01-client-server-admin-role-q05-T03-slide",
+      "s06-01-client-server-admin-role-q05-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q05-logic",
+      "s06-01-client-server-admin-role-q05-case",
+      "s06-01-client-server-admin-role-q05-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-01-client-server-admin-role-q06",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Минимальная проверка работоспособности",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q06-section",
+      "s06-01-client-server-admin-role-q06-concept",
+      "s06-01-client-server-admin-role-q06-explanation",
+      "s06-01-client-server-admin-role-q06-logic",
+      "s06-01-client-server-admin-role-q06-changed",
+      "s06-01-client-server-admin-role-q06-changed-result",
+      "s06-01-client-server-admin-role-q06-notebook",
+      "s06-01-client-server-admin-role-q06-case-input-1",
+      "s06-01-client-server-admin-role-q06-case",
+      "s06-01-client-server-admin-role-q06-T01-slide",
+      "s06-01-client-server-admin-role-q06-T02-slide",
+      "s06-01-client-server-admin-role-q06-T03-slide",
+      "s06-01-client-server-admin-role-q06-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q06-logic",
+      "s06-01-client-server-admin-role-q06-case",
+      "s06-01-client-server-admin-role-q06-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-01-client-server-admin-role-q07",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Экземпляр и база",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q07-section",
+      "s06-01-client-server-admin-role-q07-concept",
+      "s06-01-client-server-admin-role-q07-explanation",
+      "s06-01-client-server-admin-role-q07-logic",
+      "s06-01-client-server-admin-role-q07-changed",
+      "s06-01-client-server-admin-role-q07-changed-result",
+      "s06-01-client-server-admin-role-q07-notebook",
+      "s06-01-client-server-admin-role-q07-case-input-1",
+      "s06-01-client-server-admin-role-q07-case",
+      "s06-01-client-server-admin-role-q07-T01-slide",
+      "s06-01-client-server-admin-role-q07-T02-slide",
+      "s06-01-client-server-admin-role-q07-T03-slide",
+      "s06-01-client-server-admin-role-q07-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q07-logic",
+      "s06-01-client-server-admin-role-q07-case",
+      "s06-01-client-server-admin-role-q07-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-01-client-server-admin-role-q08",
+    "lectureId": "s06-01-client-server-admin-role",
+    "title": "Административная фиксация",
+    "slideIds": [
+      "s06-01-client-server-admin-role-q08-section",
+      "s06-01-client-server-admin-role-q08-concept",
+      "s06-01-client-server-admin-role-q08-explanation",
+      "s06-01-client-server-admin-role-q08-logic",
+      "s06-01-client-server-admin-role-q08-changed",
+      "s06-01-client-server-admin-role-q08-changed-result",
+      "s06-01-client-server-admin-role-q08-notebook",
+      "s06-01-client-server-admin-role-q08-case-input-1",
+      "s06-01-client-server-admin-role-q08-case",
+      "s06-01-client-server-admin-role-q08-T01-slide",
+      "s06-01-client-server-admin-role-q08-T02-slide",
+      "s06-01-client-server-admin-role-q08-T03-slide",
+      "s06-01-client-server-admin-role-q08-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-01-client-server-admin-role-q08-logic",
+      "s06-01-client-server-admin-role-q08-case",
+      "s06-01-client-server-admin-role-q08-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q01",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Выбор дистрибутива",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q01-section",
+      "s06-02-install-initial-configuration-q01-concept",
+      "s06-02-install-initial-configuration-q01-explanation",
+      "s06-02-install-initial-configuration-q01-logic",
+      "s06-02-install-initial-configuration-q01-changed",
+      "s06-02-install-initial-configuration-q01-changed-result",
+      "s06-02-install-initial-configuration-q01-notebook",
+      "s06-02-install-initial-configuration-q01-practice-1",
+      "s06-02-install-initial-configuration-q01-practice-1-code-1",
+      "s06-02-install-initial-configuration-q01-practice-1-check",
+      "s06-02-install-initial-configuration-q01-case-input-1",
+      "s06-02-install-initial-configuration-q01-case",
+      "s06-02-install-initial-configuration-q01-T01-slide",
+      "s06-02-install-initial-configuration-q01-T02-slide",
+      "s06-02-install-initial-configuration-q01-T03-slide",
+      "s06-02-install-initial-configuration-q01-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q01-logic",
+      "s06-02-install-initial-configuration-q01-case",
+      "s06-02-install-initial-configuration-q01-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q02",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Каталог данных",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q02-section",
+      "s06-02-install-initial-configuration-q02-concept",
+      "s06-02-install-initial-configuration-q02-explanation",
+      "s06-02-install-initial-configuration-q02-logic",
+      "s06-02-install-initial-configuration-q02-changed",
+      "s06-02-install-initial-configuration-q02-changed-result",
+      "s06-02-install-initial-configuration-q02-notebook",
+      "s06-02-install-initial-configuration-q02-practice-2",
+      "s06-02-install-initial-configuration-q02-practice-2-code-1",
+      "s06-02-install-initial-configuration-q02-practice-2-check",
+      "s06-02-install-initial-configuration-q02-case-input-1",
+      "s06-02-install-initial-configuration-q02-case",
+      "s06-02-install-initial-configuration-q02-T01-slide",
+      "s06-02-install-initial-configuration-q02-T02-slide",
+      "s06-02-install-initial-configuration-q02-T03-slide",
+      "s06-02-install-initial-configuration-q02-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q02-logic",
+      "s06-02-install-initial-configuration-q02-case",
+      "s06-02-install-initial-configuration-q02-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q03",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Файл конфигурации",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q03-section",
+      "s06-02-install-initial-configuration-q03-concept",
+      "s06-02-install-initial-configuration-q03-explanation",
+      "s06-02-install-initial-configuration-q03-logic",
+      "s06-02-install-initial-configuration-q03-changed",
+      "s06-02-install-initial-configuration-q03-changed-result",
+      "s06-02-install-initial-configuration-q03-notebook",
+      "s06-02-install-initial-configuration-q03-practice-3",
+      "s06-02-install-initial-configuration-q03-practice-3-code-1",
+      "s06-02-install-initial-configuration-q03-practice-3-check",
+      "s06-02-install-initial-configuration-q03-case-input-1",
+      "s06-02-install-initial-configuration-q03-case",
+      "s06-02-install-initial-configuration-q03-T01-slide",
+      "s06-02-install-initial-configuration-q03-T02-slide",
+      "s06-02-install-initial-configuration-q03-T03-slide",
+      "s06-02-install-initial-configuration-q03-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q03-logic",
+      "s06-02-install-initial-configuration-q03-case",
+      "s06-02-install-initial-configuration-q03-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q04",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Служба операционной системы",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q04-section",
+      "s06-02-install-initial-configuration-q04-concept",
+      "s06-02-install-initial-configuration-q04-explanation",
+      "s06-02-install-initial-configuration-q04-logic",
+      "s06-02-install-initial-configuration-q04-changed",
+      "s06-02-install-initial-configuration-q04-changed-result",
+      "s06-02-install-initial-configuration-q04-notebook",
+      "s06-02-install-initial-configuration-q04-practice-4",
+      "s06-02-install-initial-configuration-q04-practice-4-code-1",
+      "s06-02-install-initial-configuration-q04-practice-4-check",
+      "s06-02-install-initial-configuration-q04-case-input-1",
+      "s06-02-install-initial-configuration-q04-case",
+      "s06-02-install-initial-configuration-q04-T01-slide",
+      "s06-02-install-initial-configuration-q04-T02-slide",
+      "s06-02-install-initial-configuration-q04-T03-slide",
+      "s06-02-install-initial-configuration-q04-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q04-logic",
+      "s06-02-install-initial-configuration-q04-case",
+      "s06-02-install-initial-configuration-q04-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q05",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Запуск и останов",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q05-section",
+      "s06-02-install-initial-configuration-q05-concept",
+      "s06-02-install-initial-configuration-q05-explanation",
+      "s06-02-install-initial-configuration-q05-logic",
+      "s06-02-install-initial-configuration-q05-changed",
+      "s06-02-install-initial-configuration-q05-changed-result",
+      "s06-02-install-initial-configuration-q05-notebook",
+      "s06-02-install-initial-configuration-q05-case-input-1",
+      "s06-02-install-initial-configuration-q05-case",
+      "s06-02-install-initial-configuration-q05-T01-slide",
+      "s06-02-install-initial-configuration-q05-T02-slide",
+      "s06-02-install-initial-configuration-q05-T03-slide",
+      "s06-02-install-initial-configuration-q05-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q05-logic",
+      "s06-02-install-initial-configuration-q05-case",
+      "s06-02-install-initial-configuration-q05-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q06",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Инициализация экземпляра",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q06-section",
+      "s06-02-install-initial-configuration-q06-concept",
+      "s06-02-install-initial-configuration-q06-explanation",
+      "s06-02-install-initial-configuration-q06-logic",
+      "s06-02-install-initial-configuration-q06-changed",
+      "s06-02-install-initial-configuration-q06-changed-result",
+      "s06-02-install-initial-configuration-q06-notebook",
+      "s06-02-install-initial-configuration-q06-case-input-1",
+      "s06-02-install-initial-configuration-q06-case",
+      "s06-02-install-initial-configuration-q06-T01-slide",
+      "s06-02-install-initial-configuration-q06-T02-slide",
+      "s06-02-install-initial-configuration-q06-T03-slide",
+      "s06-02-install-initial-configuration-q06-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q06-logic",
+      "s06-02-install-initial-configuration-q06-case",
+      "s06-02-install-initial-configuration-q06-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q07",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Smoke-тест установки",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q07-section",
+      "s06-02-install-initial-configuration-q07-concept",
+      "s06-02-install-initial-configuration-q07-explanation",
+      "s06-02-install-initial-configuration-q07-logic",
+      "s06-02-install-initial-configuration-q07-changed",
+      "s06-02-install-initial-configuration-q07-changed-result",
+      "s06-02-install-initial-configuration-q07-notebook",
+      "s06-02-install-initial-configuration-q07-case-input-1",
+      "s06-02-install-initial-configuration-q07-case",
+      "s06-02-install-initial-configuration-q07-T01-slide",
+      "s06-02-install-initial-configuration-q07-T02-slide",
+      "s06-02-install-initial-configuration-q07-T03-slide",
+      "s06-02-install-initial-configuration-q07-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q07-logic",
+      "s06-02-install-initial-configuration-q07-case",
+      "s06-02-install-initial-configuration-q07-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-02-install-initial-configuration-q08",
+    "lectureId": "s06-02-install-initial-configuration",
+    "title": "Откат изменения",
+    "slideIds": [
+      "s06-02-install-initial-configuration-q08-section",
+      "s06-02-install-initial-configuration-q08-concept",
+      "s06-02-install-initial-configuration-q08-explanation",
+      "s06-02-install-initial-configuration-q08-logic",
+      "s06-02-install-initial-configuration-q08-changed",
+      "s06-02-install-initial-configuration-q08-changed-result",
+      "s06-02-install-initial-configuration-q08-notebook",
+      "s06-02-install-initial-configuration-q08-practice-5",
+      "s06-02-install-initial-configuration-q08-practice-5-code-1",
+      "s06-02-install-initial-configuration-q08-practice-5-check",
+      "s06-02-install-initial-configuration-q08-case-input-1",
+      "s06-02-install-initial-configuration-q08-case",
+      "s06-02-install-initial-configuration-q08-T01-slide",
+      "s06-02-install-initial-configuration-q08-T02-slide",
+      "s06-02-install-initial-configuration-q08-T03-slide",
+      "s06-02-install-initial-configuration-q08-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-02-install-initial-configuration-q08-logic",
+      "s06-02-install-initial-configuration-q08-case",
+      "s06-02-install-initial-configuration-q08-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q01",
+    "lectureId": "s06-03-server-connections",
+    "title": "Адрес сервера",
+    "slideIds": [
+      "s06-03-server-connections-q01-section",
+      "s06-03-server-connections-q01-concept",
+      "s06-03-server-connections-q01-explanation",
+      "s06-03-server-connections-q01-logic",
+      "s06-03-server-connections-q01-changed",
+      "s06-03-server-connections-q01-changed-result",
+      "s06-03-server-connections-q01-notebook",
+      "s06-03-server-connections-q01-practice-1",
+      "s06-03-server-connections-q01-practice-1-code-1",
+      "s06-03-server-connections-q01-practice-1-check",
+      "s06-03-server-connections-q01-case-input-1",
+      "s06-03-server-connections-q01-case",
+      "s06-03-server-connections-q01-T01-slide",
+      "s06-03-server-connections-q01-T02-slide",
+      "s06-03-server-connections-q01-T03-slide",
+      "s06-03-server-connections-q01-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q01-logic",
+      "s06-03-server-connections-q01-case",
+      "s06-03-server-connections-q01-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q02",
+    "lectureId": "s06-03-server-connections",
+    "title": "Сетевой порт",
+    "slideIds": [
+      "s06-03-server-connections-q02-section",
+      "s06-03-server-connections-q02-concept",
+      "s06-03-server-connections-q02-explanation",
+      "s06-03-server-connections-q02-logic",
+      "s06-03-server-connections-q02-changed",
+      "s06-03-server-connections-q02-changed-result",
+      "s06-03-server-connections-q02-notebook",
+      "s06-03-server-connections-q02-practice-2",
+      "s06-03-server-connections-q02-practice-2-code-1",
+      "s06-03-server-connections-q02-practice-2-check",
+      "s06-03-server-connections-q02-case-input-1",
+      "s06-03-server-connections-q02-case",
+      "s06-03-server-connections-q02-T01-slide",
+      "s06-03-server-connections-q02-T02-slide",
+      "s06-03-server-connections-q02-T03-slide",
+      "s06-03-server-connections-q02-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q02-logic",
+      "s06-03-server-connections-q02-case",
+      "s06-03-server-connections-q02-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q03",
+    "lectureId": "s06-03-server-connections",
+    "title": "Локальное подключение",
+    "slideIds": [
+      "s06-03-server-connections-q03-section",
+      "s06-03-server-connections-q03-concept",
+      "s06-03-server-connections-q03-explanation",
+      "s06-03-server-connections-q03-logic",
+      "s06-03-server-connections-q03-changed",
+      "s06-03-server-connections-q03-changed-result",
+      "s06-03-server-connections-q03-notebook",
+      "s06-03-server-connections-q03-case-input-1",
+      "s06-03-server-connections-q03-case",
+      "s06-03-server-connections-q03-T01-slide",
+      "s06-03-server-connections-q03-T02-slide",
+      "s06-03-server-connections-q03-T03-slide",
+      "s06-03-server-connections-q03-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q03-logic",
+      "s06-03-server-connections-q03-case",
+      "s06-03-server-connections-q03-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q04",
+    "lectureId": "s06-03-server-connections",
+    "title": "Удалённое подключение",
+    "slideIds": [
+      "s06-03-server-connections-q04-section",
+      "s06-03-server-connections-q04-concept",
+      "s06-03-server-connections-q04-explanation",
+      "s06-03-server-connections-q04-logic",
+      "s06-03-server-connections-q04-changed",
+      "s06-03-server-connections-q04-changed-result",
+      "s06-03-server-connections-q04-notebook",
+      "s06-03-server-connections-q04-case-input-1",
+      "s06-03-server-connections-q04-case",
+      "s06-03-server-connections-q04-T01-slide",
+      "s06-03-server-connections-q04-T02-slide",
+      "s06-03-server-connections-q04-T03-slide",
+      "s06-03-server-connections-q04-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q04-logic",
+      "s06-03-server-connections-q04-case",
+      "s06-03-server-connections-q04-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q05",
+    "lectureId": "s06-03-server-connections",
+    "title": "Клиентская программа",
+    "slideIds": [
+      "s06-03-server-connections-q05-section",
+      "s06-03-server-connections-q05-concept",
+      "s06-03-server-connections-q05-explanation",
+      "s06-03-server-connections-q05-logic",
+      "s06-03-server-connections-q05-changed",
+      "s06-03-server-connections-q05-changed-result",
+      "s06-03-server-connections-q05-notebook",
+      "s06-03-server-connections-q05-case-input-1",
+      "s06-03-server-connections-q05-case",
+      "s06-03-server-connections-q05-T01-slide",
+      "s06-03-server-connections-q05-T02-slide",
+      "s06-03-server-connections-q05-T03-slide",
+      "s06-03-server-connections-q05-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q05-logic",
+      "s06-03-server-connections-q05-case",
+      "s06-03-server-connections-q05-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q06",
+    "lectureId": "s06-03-server-connections",
+    "title": "Аутентификация учётной записи",
+    "slideIds": [
+      "s06-03-server-connections-q06-section",
+      "s06-03-server-connections-q06-concept",
+      "s06-03-server-connections-q06-explanation",
+      "s06-03-server-connections-q06-logic",
+      "s06-03-server-connections-q06-changed",
+      "s06-03-server-connections-q06-changed-result",
+      "s06-03-server-connections-q06-notebook",
+      "s06-03-server-connections-q06-practice-3",
+      "s06-03-server-connections-q06-practice-3-check",
+      "s06-03-server-connections-q06-case-input-1",
+      "s06-03-server-connections-q06-case",
+      "s06-03-server-connections-q06-T01-slide",
+      "s06-03-server-connections-q06-T02-slide",
+      "s06-03-server-connections-q06-T03-slide",
+      "s06-03-server-connections-q06-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q06-logic",
+      "s06-03-server-connections-q06-case",
+      "s06-03-server-connections-q06-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q07",
+    "lectureId": "s06-03-server-connections",
+    "title": "Типовые отказы",
+    "slideIds": [
+      "s06-03-server-connections-q07-section",
+      "s06-03-server-connections-q07-concept",
+      "s06-03-server-connections-q07-explanation",
+      "s06-03-server-connections-q07-logic",
+      "s06-03-server-connections-q07-changed",
+      "s06-03-server-connections-q07-changed-result",
+      "s06-03-server-connections-q07-notebook",
+      "s06-03-server-connections-q07-case-input-1",
+      "s06-03-server-connections-q07-case",
+      "s06-03-server-connections-q07-T01-slide",
+      "s06-03-server-connections-q07-T02-slide",
+      "s06-03-server-connections-q07-T03-slide",
+      "s06-03-server-connections-q07-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q07-logic",
+      "s06-03-server-connections-q07-case",
+      "s06-03-server-connections-q07-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-03-server-connections-q08",
+    "lectureId": "s06-03-server-connections",
+    "title": "Доказательство восстановления",
+    "slideIds": [
+      "s06-03-server-connections-q08-section",
+      "s06-03-server-connections-q08-concept",
+      "s06-03-server-connections-q08-explanation",
+      "s06-03-server-connections-q08-logic",
+      "s06-03-server-connections-q08-changed",
+      "s06-03-server-connections-q08-changed-result",
+      "s06-03-server-connections-q08-notebook",
+      "s06-03-server-connections-q08-case-input-1",
+      "s06-03-server-connections-q08-case",
+      "s06-03-server-connections-q08-T01-slide",
+      "s06-03-server-connections-q08-T02-slide",
+      "s06-03-server-connections-q08-T03-slide",
+      "s06-03-server-connections-q08-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-03-server-connections-q08-logic",
+      "s06-03-server-connections-q08-case",
+      "s06-03-server-connections-q08-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q01",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Идентичность пользователя",
+    "slideIds": [
+      "s06-04-users-and-privileges-q01-section",
+      "s06-04-users-and-privileges-q01-concept",
+      "s06-04-users-and-privileges-q01-explanation",
+      "s06-04-users-and-privileges-q01-logic",
+      "s06-04-users-and-privileges-q01-changed",
+      "s06-04-users-and-privileges-q01-changed-result",
+      "s06-04-users-and-privileges-q01-notebook",
+      "s06-04-users-and-privileges-q01-practice-1",
+      "s06-04-users-and-privileges-q01-practice-1-file",
+      "s06-04-users-and-privileges-q01-practice-1-code-1",
+      "s06-04-users-and-privileges-q01-practice-1-check",
+      "s06-04-users-and-privileges-q01-case-input-1",
+      "s06-04-users-and-privileges-q01-case",
+      "s06-04-users-and-privileges-q01-T01-slide",
+      "s06-04-users-and-privileges-q01-T02-slide",
+      "s06-04-users-and-privileges-q01-T03-slide",
+      "s06-04-users-and-privileges-q01-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q01-logic",
+      "s06-04-users-and-privileges-q01-case",
+      "s06-04-users-and-privileges-q01-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q02",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Создание учётной записи",
+    "slideIds": [
+      "s06-04-users-and-privileges-q02-section",
+      "s06-04-users-and-privileges-q02-concept",
+      "s06-04-users-and-privileges-q02-explanation",
+      "s06-04-users-and-privileges-q02-logic",
+      "s06-04-users-and-privileges-q02-changed",
+      "s06-04-users-and-privileges-q02-changed-result",
+      "s06-04-users-and-privileges-q02-notebook",
+      "s06-04-users-and-privileges-q02-case-input-1",
+      "s06-04-users-and-privileges-q02-case",
+      "s06-04-users-and-privileges-q02-T01-slide",
+      "s06-04-users-and-privileges-q02-T02-slide",
+      "s06-04-users-and-privileges-q02-T03-slide",
+      "s06-04-users-and-privileges-q02-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q02-logic",
+      "s06-04-users-and-privileges-q02-case",
+      "s06-04-users-and-privileges-q02-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q03",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Права на базу",
+    "slideIds": [
+      "s06-04-users-and-privileges-q03-section",
+      "s06-04-users-and-privileges-q03-concept",
+      "s06-04-users-and-privileges-q03-explanation",
+      "s06-04-users-and-privileges-q03-logic",
+      "s06-04-users-and-privileges-q03-changed",
+      "s06-04-users-and-privileges-q03-changed-result",
+      "s06-04-users-and-privileges-q03-notebook",
+      "s06-04-users-and-privileges-q03-case-input-1",
+      "s06-04-users-and-privileges-q03-case",
+      "s06-04-users-and-privileges-q03-T01-slide",
+      "s06-04-users-and-privileges-q03-T02-slide",
+      "s06-04-users-and-privileges-q03-T03-slide",
+      "s06-04-users-and-privileges-q03-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q03-logic",
+      "s06-04-users-and-privileges-q03-case",
+      "s06-04-users-and-privileges-q03-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q04",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Права на таблицу",
+    "slideIds": [
+      "s06-04-users-and-privileges-q04-section",
+      "s06-04-users-and-privileges-q04-concept",
+      "s06-04-users-and-privileges-q04-explanation",
+      "s06-04-users-and-privileges-q04-logic",
+      "s06-04-users-and-privileges-q04-changed",
+      "s06-04-users-and-privileges-q04-changed-result",
+      "s06-04-users-and-privileges-q04-notebook",
+      "s06-04-users-and-privileges-q04-case-input-1",
+      "s06-04-users-and-privileges-q04-case",
+      "s06-04-users-and-privileges-q04-T01-slide",
+      "s06-04-users-and-privileges-q04-T02-slide",
+      "s06-04-users-and-privileges-q04-T03-slide",
+      "s06-04-users-and-privileges-q04-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q04-logic",
+      "s06-04-users-and-privileges-q04-case",
+      "s06-04-users-and-privileges-q04-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q05",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Права на операцию",
+    "slideIds": [
+      "s06-04-users-and-privileges-q05-section",
+      "s06-04-users-and-privileges-q05-concept",
+      "s06-04-users-and-privileges-q05-explanation",
+      "s06-04-users-and-privileges-q05-logic",
+      "s06-04-users-and-privileges-q05-changed",
+      "s06-04-users-and-privileges-q05-changed-result",
+      "s06-04-users-and-privileges-q05-notebook",
+      "s06-04-users-and-privileges-q05-practice-2",
+      "s06-04-users-and-privileges-q05-practice-2-code-1",
+      "s06-04-users-and-privileges-q05-practice-2-check",
+      "s06-04-users-and-privileges-q05-case-input-1",
+      "s06-04-users-and-privileges-q05-case",
+      "s06-04-users-and-privileges-q05-T01-slide",
+      "s06-04-users-and-privileges-q05-T02-slide",
+      "s06-04-users-and-privileges-q05-T03-slide",
+      "s06-04-users-and-privileges-q05-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q05-logic",
+      "s06-04-users-and-privileges-q05-case",
+      "s06-04-users-and-privileges-q05-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q06",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Выдача и отзыв",
+    "slideIds": [
+      "s06-04-users-and-privileges-q06-section",
+      "s06-04-users-and-privileges-q06-concept",
+      "s06-04-users-and-privileges-q06-explanation",
+      "s06-04-users-and-privileges-q06-logic",
+      "s06-04-users-and-privileges-q06-changed",
+      "s06-04-users-and-privileges-q06-changed-result",
+      "s06-04-users-and-privileges-q06-notebook",
+      "s06-04-users-and-privileges-q06-practice-3",
+      "s06-04-users-and-privileges-q06-practice-3-code-1",
+      "s06-04-users-and-privileges-q06-practice-3-check",
+      "s06-04-users-and-privileges-q06-case-input-1",
+      "s06-04-users-and-privileges-q06-case",
+      "s06-04-users-and-privileges-q06-T01-slide",
+      "s06-04-users-and-privileges-q06-T02-slide",
+      "s06-04-users-and-privileges-q06-T03-slide",
+      "s06-04-users-and-privileges-q06-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q06-logic",
+      "s06-04-users-and-privileges-q06-case",
+      "s06-04-users-and-privileges-q06-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q07",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Наименьшие привилегии",
+    "slideIds": [
+      "s06-04-users-and-privileges-q07-section",
+      "s06-04-users-and-privileges-q07-concept",
+      "s06-04-users-and-privileges-q07-explanation",
+      "s06-04-users-and-privileges-q07-logic",
+      "s06-04-users-and-privileges-q07-changed",
+      "s06-04-users-and-privileges-q07-changed-result",
+      "s06-04-users-and-privileges-q07-notebook",
+      "s06-04-users-and-privileges-q07-case-input-1",
+      "s06-04-users-and-privileges-q07-case",
+      "s06-04-users-and-privileges-q07-T01-slide",
+      "s06-04-users-and-privileges-q07-T02-slide",
+      "s06-04-users-and-privileges-q07-T03-slide",
+      "s06-04-users-and-privileges-q07-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q07-logic",
+      "s06-04-users-and-privileges-q07-case",
+      "s06-04-users-and-privileges-q07-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-04-users-and-privileges-q08",
+    "lectureId": "s06-04-users-and-privileges",
+    "title": "Аудит доступа",
+    "slideIds": [
+      "s06-04-users-and-privileges-q08-section",
+      "s06-04-users-and-privileges-q08-concept",
+      "s06-04-users-and-privileges-q08-explanation",
+      "s06-04-users-and-privileges-q08-logic",
+      "s06-04-users-and-privileges-q08-changed",
+      "s06-04-users-and-privileges-q08-changed-result",
+      "s06-04-users-and-privileges-q08-notebook",
+      "s06-04-users-and-privileges-q08-case-input-1",
+      "s06-04-users-and-privileges-q08-case",
+      "s06-04-users-and-privileges-q08-T01-slide",
+      "s06-04-users-and-privileges-q08-T02-slide",
+      "s06-04-users-and-privileges-q08-T03-slide",
+      "s06-04-users-and-privileges-q08-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-04-users-and-privileges-q08-logic",
+      "s06-04-users-and-privileges-q08-case",
+      "s06-04-users-and-privileges-q08-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q01",
+    "lectureId": "s06-05-data-placement",
+    "title": "База и схема в MySQL",
+    "slideIds": [
+      "s06-05-data-placement-q01-section",
+      "s06-05-data-placement-q01-concept",
+      "s06-05-data-placement-q01-explanation",
+      "s06-05-data-placement-q01-logic",
+      "s06-05-data-placement-q01-changed",
+      "s06-05-data-placement-q01-changed-result",
+      "s06-05-data-placement-q01-notebook",
+      "s06-05-data-placement-q01-practice-1",
+      "s06-05-data-placement-q01-practice-1-file",
+      "s06-05-data-placement-q01-practice-1-code-1",
+      "s06-05-data-placement-q01-practice-1-code-2",
+      "s06-05-data-placement-q01-practice-1-check",
+      "s06-05-data-placement-q01-case-input-1",
+      "s06-05-data-placement-q01-case",
+      "s06-05-data-placement-q01-T01-slide",
+      "s06-05-data-placement-q01-T02-slide",
+      "s06-05-data-placement-q01-T03-slide",
+      "s06-05-data-placement-q01-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q01-logic",
+      "s06-05-data-placement-q01-case",
+      "s06-05-data-placement-q01-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q02",
+    "lectureId": "s06-05-data-placement",
+    "title": "Таблицы и индексы",
+    "slideIds": [
+      "s06-05-data-placement-q02-section",
+      "s06-05-data-placement-q02-concept",
+      "s06-05-data-placement-q02-explanation",
+      "s06-05-data-placement-q02-logic",
+      "s06-05-data-placement-q02-changed",
+      "s06-05-data-placement-q02-changed-result",
+      "s06-05-data-placement-q02-notebook",
+      "s06-05-data-placement-q02-case-input-1",
+      "s06-05-data-placement-q02-case",
+      "s06-05-data-placement-q02-T01-slide",
+      "s06-05-data-placement-q02-T02-slide",
+      "s06-05-data-placement-q02-T03-slide",
+      "s06-05-data-placement-q02-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q02-logic",
+      "s06-05-data-placement-q02-case",
+      "s06-05-data-placement-q02-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q03",
+    "lectureId": "s06-05-data-placement",
+    "title": "Каталог данных",
+    "slideIds": [
+      "s06-05-data-placement-q03-section",
+      "s06-05-data-placement-q03-concept",
+      "s06-05-data-placement-q03-explanation",
+      "s06-05-data-placement-q03-logic",
+      "s06-05-data-placement-q03-changed",
+      "s06-05-data-placement-q03-changed-result",
+      "s06-05-data-placement-q03-notebook",
+      "s06-05-data-placement-q03-case-input-1",
+      "s06-05-data-placement-q03-case",
+      "s06-05-data-placement-q03-T01-slide",
+      "s06-05-data-placement-q03-T02-slide",
+      "s06-05-data-placement-q03-T03-slide",
+      "s06-05-data-placement-q03-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q03-logic",
+      "s06-05-data-placement-q03-case",
+      "s06-05-data-placement-q03-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q04",
+    "lectureId": "s06-05-data-placement",
+    "title": "Файлы и движок хранения",
+    "slideIds": [
+      "s06-05-data-placement-q04-section",
+      "s06-05-data-placement-q04-concept",
+      "s06-05-data-placement-q04-explanation",
+      "s06-05-data-placement-q04-logic",
+      "s06-05-data-placement-q04-changed",
+      "s06-05-data-placement-q04-changed-result",
+      "s06-05-data-placement-q04-notebook",
+      "s06-05-data-placement-q04-case-input-1",
+      "s06-05-data-placement-q04-case",
+      "s06-05-data-placement-q04-T01-slide",
+      "s06-05-data-placement-q04-T02-slide",
+      "s06-05-data-placement-q04-T03-slide",
+      "s06-05-data-placement-q04-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q04-logic",
+      "s06-05-data-placement-q04-case",
+      "s06-05-data-placement-q04-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q05",
+    "lectureId": "s06-05-data-placement",
+    "title": "Кодировка",
+    "slideIds": [
+      "s06-05-data-placement-q05-section",
+      "s06-05-data-placement-q05-concept",
+      "s06-05-data-placement-q05-explanation",
+      "s06-05-data-placement-q05-logic",
+      "s06-05-data-placement-q05-changed",
+      "s06-05-data-placement-q05-changed-result",
+      "s06-05-data-placement-q05-notebook",
+      "s06-05-data-placement-q05-practice-2",
+      "s06-05-data-placement-q05-practice-2-file",
+      "s06-05-data-placement-q05-practice-2-code-1",
+      "s06-05-data-placement-q05-practice-2-check",
+      "s06-05-data-placement-q05-case-input-1",
+      "s06-05-data-placement-q05-case",
+      "s06-05-data-placement-q05-T01-slide",
+      "s06-05-data-placement-q05-T02-slide",
+      "s06-05-data-placement-q05-T03-slide",
+      "s06-05-data-placement-q05-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q05-logic",
+      "s06-05-data-placement-q05-case",
+      "s06-05-data-placement-q05-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q06",
+    "lectureId": "s06-05-data-placement",
+    "title": "Правила сравнения",
+    "slideIds": [
+      "s06-05-data-placement-q06-section",
+      "s06-05-data-placement-q06-concept",
+      "s06-05-data-placement-q06-explanation",
+      "s06-05-data-placement-q06-logic",
+      "s06-05-data-placement-q06-changed",
+      "s06-05-data-placement-q06-changed-result",
+      "s06-05-data-placement-q06-notebook",
+      "s06-05-data-placement-q06-case-input-1",
+      "s06-05-data-placement-q06-case",
+      "s06-05-data-placement-q06-T01-slide",
+      "s06-05-data-placement-q06-T02-slide",
+      "s06-05-data-placement-q06-T03-slide",
+      "s06-05-data-placement-q06-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q06-logic",
+      "s06-05-data-placement-q06-case",
+      "s06-05-data-placement-q06-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q07",
+    "lectureId": "s06-05-data-placement",
+    "title": "Оценка объёма",
+    "slideIds": [
+      "s06-05-data-placement-q07-section",
+      "s06-05-data-placement-q07-concept",
+      "s06-05-data-placement-q07-explanation",
+      "s06-05-data-placement-q07-logic",
+      "s06-05-data-placement-q07-changed",
+      "s06-05-data-placement-q07-changed-result",
+      "s06-05-data-placement-q07-notebook",
+      "s06-05-data-placement-q07-case-input-1",
+      "s06-05-data-placement-q07-case",
+      "s06-05-data-placement-q07-T01-slide",
+      "s06-05-data-placement-q07-T02-slide",
+      "s06-05-data-placement-q07-T03-slide",
+      "s06-05-data-placement-q07-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q07-logic",
+      "s06-05-data-placement-q07-case",
+      "s06-05-data-placement-q07-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-05-data-placement-q08",
+    "lectureId": "s06-05-data-placement",
+    "title": "Контроль свободного места",
+    "slideIds": [
+      "s06-05-data-placement-q08-section",
+      "s06-05-data-placement-q08-concept",
+      "s06-05-data-placement-q08-explanation",
+      "s06-05-data-placement-q08-logic",
+      "s06-05-data-placement-q08-changed",
+      "s06-05-data-placement-q08-changed-result",
+      "s06-05-data-placement-q08-notebook",
+      "s06-05-data-placement-q08-practice-3",
+      "s06-05-data-placement-q08-practice-3-code-1",
+      "s06-05-data-placement-q08-practice-3-check",
+      "s06-05-data-placement-q08-case-input-1",
+      "s06-05-data-placement-q08-case",
+      "s06-05-data-placement-q08-T01-slide",
+      "s06-05-data-placement-q08-T02-slide",
+      "s06-05-data-placement-q08-T03-slide",
+      "s06-05-data-placement-q08-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-05-data-placement-q08-logic",
+      "s06-05-data-placement-q08-case",
+      "s06-05-data-placement-q08-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q01",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Транзакция глазами сервера",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q01-section",
+      "s06-06-transactions-locks-deadlocks-q01-concept",
+      "s06-06-transactions-locks-deadlocks-q01-explanation",
+      "s06-06-transactions-locks-deadlocks-q01-logic",
+      "s06-06-transactions-locks-deadlocks-q01-changed",
+      "s06-06-transactions-locks-deadlocks-q01-changed-result",
+      "s06-06-transactions-locks-deadlocks-q01-notebook",
+      "s06-06-transactions-locks-deadlocks-q01-practice-1",
+      "s06-06-transactions-locks-deadlocks-q01-practice-1-file",
+      "s06-06-transactions-locks-deadlocks-q01-practice-1-code-1",
+      "s06-06-transactions-locks-deadlocks-q01-practice-1-check",
+      "s06-06-transactions-locks-deadlocks-q01-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q01-case-input-2",
+      "s06-06-transactions-locks-deadlocks-q01-case",
+      "s06-06-transactions-locks-deadlocks-q01-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q01-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q01-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q01-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q01-logic",
+      "s06-06-transactions-locks-deadlocks-q01-case",
+      "s06-06-transactions-locks-deadlocks-q01-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q01-case-input-2"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q02",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Назначение блокировки",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q02-section",
+      "s06-06-transactions-locks-deadlocks-q02-concept",
+      "s06-06-transactions-locks-deadlocks-q02-explanation",
+      "s06-06-transactions-locks-deadlocks-q02-logic",
+      "s06-06-transactions-locks-deadlocks-q02-changed",
+      "s06-06-transactions-locks-deadlocks-q02-changed-result",
+      "s06-06-transactions-locks-deadlocks-q02-notebook",
+      "s06-06-transactions-locks-deadlocks-q02-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q02-case-input-2",
+      "s06-06-transactions-locks-deadlocks-q02-case",
+      "s06-06-transactions-locks-deadlocks-q02-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q02-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q02-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q02-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q02-logic",
+      "s06-06-transactions-locks-deadlocks-q02-case",
+      "s06-06-transactions-locks-deadlocks-q02-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q02-case-input-2"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q03",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Ожидание",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q03-section",
+      "s06-06-transactions-locks-deadlocks-q03-concept",
+      "s06-06-transactions-locks-deadlocks-q03-explanation",
+      "s06-06-transactions-locks-deadlocks-q03-logic",
+      "s06-06-transactions-locks-deadlocks-q03-changed",
+      "s06-06-transactions-locks-deadlocks-q03-changed-result",
+      "s06-06-transactions-locks-deadlocks-q03-notebook",
+      "s06-06-transactions-locks-deadlocks-q03-practice-2",
+      "s06-06-transactions-locks-deadlocks-q03-practice-2-file",
+      "s06-06-transactions-locks-deadlocks-q03-practice-2-code-1",
+      "s06-06-transactions-locks-deadlocks-q03-practice-2-check",
+      "s06-06-transactions-locks-deadlocks-q03-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q03-case-input-2",
+      "s06-06-transactions-locks-deadlocks-q03-case",
+      "s06-06-transactions-locks-deadlocks-q03-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q03-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q03-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q03-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q03-logic",
+      "s06-06-transactions-locks-deadlocks-q03-case",
+      "s06-06-transactions-locks-deadlocks-q03-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q03-case-input-2"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q04",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Долгая транзакция",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q04-section",
+      "s06-06-transactions-locks-deadlocks-q04-concept",
+      "s06-06-transactions-locks-deadlocks-q04-explanation",
+      "s06-06-transactions-locks-deadlocks-q04-logic",
+      "s06-06-transactions-locks-deadlocks-q04-changed",
+      "s06-06-transactions-locks-deadlocks-q04-changed-result",
+      "s06-06-transactions-locks-deadlocks-q04-notebook",
+      "s06-06-transactions-locks-deadlocks-q04-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q04-case-input-2",
+      "s06-06-transactions-locks-deadlocks-q04-case",
+      "s06-06-transactions-locks-deadlocks-q04-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q04-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q04-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q04-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q04-logic",
+      "s06-06-transactions-locks-deadlocks-q04-case",
+      "s06-06-transactions-locks-deadlocks-q04-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q04-case-input-2"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q05",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Взаимная блокировка",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q05-section",
+      "s06-06-transactions-locks-deadlocks-q05-concept",
+      "s06-06-transactions-locks-deadlocks-q05-explanation",
+      "s06-06-transactions-locks-deadlocks-q05-logic",
+      "s06-06-transactions-locks-deadlocks-q05-changed",
+      "s06-06-transactions-locks-deadlocks-q05-changed-result",
+      "s06-06-transactions-locks-deadlocks-q05-notebook",
+      "s06-06-transactions-locks-deadlocks-q05-practice-3",
+      "s06-06-transactions-locks-deadlocks-q05-practice-3-check",
+      "s06-06-transactions-locks-deadlocks-q05-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q05-case-input-2",
+      "s06-06-transactions-locks-deadlocks-q05-case",
+      "s06-06-transactions-locks-deadlocks-q05-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q05-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q05-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q05-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q05-logic",
+      "s06-06-transactions-locks-deadlocks-q05-case",
+      "s06-06-transactions-locks-deadlocks-q05-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q05-case-input-2"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q06",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Прекращение отклика",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q06-section",
+      "s06-06-transactions-locks-deadlocks-q06-concept",
+      "s06-06-transactions-locks-deadlocks-q06-explanation",
+      "s06-06-transactions-locks-deadlocks-q06-logic",
+      "s06-06-transactions-locks-deadlocks-q06-changed",
+      "s06-06-transactions-locks-deadlocks-q06-changed-result",
+      "s06-06-transactions-locks-deadlocks-q06-notebook",
+      "s06-06-transactions-locks-deadlocks-q06-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q06-case",
+      "s06-06-transactions-locks-deadlocks-q06-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q06-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q06-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q06-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q06-logic",
+      "s06-06-transactions-locks-deadlocks-q06-case",
+      "s06-06-transactions-locks-deadlocks-q06-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q07",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Безопасное вмешательство",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q07-section",
+      "s06-06-transactions-locks-deadlocks-q07-concept",
+      "s06-06-transactions-locks-deadlocks-q07-explanation",
+      "s06-06-transactions-locks-deadlocks-q07-logic",
+      "s06-06-transactions-locks-deadlocks-q07-changed",
+      "s06-06-transactions-locks-deadlocks-q07-changed-result",
+      "s06-06-transactions-locks-deadlocks-q07-notebook",
+      "s06-06-transactions-locks-deadlocks-q07-practice-4",
+      "s06-06-transactions-locks-deadlocks-q07-practice-4-check",
+      "s06-06-transactions-locks-deadlocks-q07-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q07-case-input-2",
+      "s06-06-transactions-locks-deadlocks-q07-case",
+      "s06-06-transactions-locks-deadlocks-q07-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q07-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q07-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q07-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q07-logic",
+      "s06-06-transactions-locks-deadlocks-q07-case",
+      "s06-06-transactions-locks-deadlocks-q07-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q07-case-input-2"
+    ]
+  },
+  {
+    "questionId": "s06-06-transactions-locks-deadlocks-q08",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "title": "Проверка после устранения",
+    "slideIds": [
+      "s06-06-transactions-locks-deadlocks-q08-section",
+      "s06-06-transactions-locks-deadlocks-q08-concept",
+      "s06-06-transactions-locks-deadlocks-q08-explanation",
+      "s06-06-transactions-locks-deadlocks-q08-logic",
+      "s06-06-transactions-locks-deadlocks-q08-changed",
+      "s06-06-transactions-locks-deadlocks-q08-changed-result",
+      "s06-06-transactions-locks-deadlocks-q08-notebook",
+      "s06-06-transactions-locks-deadlocks-q08-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q08-case-input-2",
+      "s06-06-transactions-locks-deadlocks-q08-case",
+      "s06-06-transactions-locks-deadlocks-q08-T01-slide",
+      "s06-06-transactions-locks-deadlocks-q08-T02-slide",
+      "s06-06-transactions-locks-deadlocks-q08-T03-slide",
+      "s06-06-transactions-locks-deadlocks-q08-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-06-transactions-locks-deadlocks-q08-logic",
+      "s06-06-transactions-locks-deadlocks-q08-case",
+      "s06-06-transactions-locks-deadlocks-q08-case-input-1",
+      "s06-06-transactions-locks-deadlocks-q08-case-input-2"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q01",
+    "lectureId": "s06-07-server-log",
+    "title": "Назначение журнала",
+    "slideIds": [
+      "s06-07-server-log-q01-section",
+      "s06-07-server-log-q01-concept",
+      "s06-07-server-log-q01-explanation",
+      "s06-07-server-log-q01-logic",
+      "s06-07-server-log-q01-changed",
+      "s06-07-server-log-q01-changed-result",
+      "s06-07-server-log-q01-notebook",
+      "s06-07-server-log-q01-practice-1",
+      "s06-07-server-log-q01-practice-1-file",
+      "s06-07-server-log-q01-practice-1-code-1",
+      "s06-07-server-log-q01-practice-1-check",
+      "s06-07-server-log-q01-case-input-1",
+      "s06-07-server-log-q01-case",
+      "s06-07-server-log-q01-T01-slide",
+      "s06-07-server-log-q01-T02-slide",
+      "s06-07-server-log-q01-T03-slide",
+      "s06-07-server-log-q01-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q01-logic",
+      "s06-07-server-log-q01-case",
+      "s06-07-server-log-q01-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q02",
+    "lectureId": "s06-07-server-log",
+    "title": "Структура записи",
+    "slideIds": [
+      "s06-07-server-log-q02-section",
+      "s06-07-server-log-q02-concept",
+      "s06-07-server-log-q02-explanation",
+      "s06-07-server-log-q02-logic",
+      "s06-07-server-log-q02-changed",
+      "s06-07-server-log-q02-changed-result",
+      "s06-07-server-log-q02-notebook",
+      "s06-07-server-log-q02-case-input-1",
+      "s06-07-server-log-q02-case",
+      "s06-07-server-log-q02-T01-slide",
+      "s06-07-server-log-q02-T02-slide",
+      "s06-07-server-log-q02-T03-slide",
+      "s06-07-server-log-q02-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q02-logic",
+      "s06-07-server-log-q02-case",
+      "s06-07-server-log-q02-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q03",
+    "lectureId": "s06-07-server-log",
+    "title": "Уровни сообщений",
+    "slideIds": [
+      "s06-07-server-log-q03-section",
+      "s06-07-server-log-q03-concept",
+      "s06-07-server-log-q03-explanation",
+      "s06-07-server-log-q03-logic",
+      "s06-07-server-log-q03-changed",
+      "s06-07-server-log-q03-changed-result",
+      "s06-07-server-log-q03-notebook",
+      "s06-07-server-log-q03-case-input-1",
+      "s06-07-server-log-q03-case",
+      "s06-07-server-log-q03-T01-slide",
+      "s06-07-server-log-q03-T02-slide",
+      "s06-07-server-log-q03-T03-slide",
+      "s06-07-server-log-q03-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q03-logic",
+      "s06-07-server-log-q03-case",
+      "s06-07-server-log-q03-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q04",
+    "lectureId": "s06-07-server-log",
+    "title": "Временная линия",
+    "slideIds": [
+      "s06-07-server-log-q04-section",
+      "s06-07-server-log-q04-concept",
+      "s06-07-server-log-q04-explanation",
+      "s06-07-server-log-q04-logic",
+      "s06-07-server-log-q04-changed",
+      "s06-07-server-log-q04-changed-result",
+      "s06-07-server-log-q04-notebook",
+      "s06-07-server-log-q04-case-input-1",
+      "s06-07-server-log-q04-case",
+      "s06-07-server-log-q04-T01-slide",
+      "s06-07-server-log-q04-T02-slide",
+      "s06-07-server-log-q04-T03-slide",
+      "s06-07-server-log-q04-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q04-logic",
+      "s06-07-server-log-q04-case",
+      "s06-07-server-log-q04-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q05",
+    "lectureId": "s06-07-server-log",
+    "title": "Настройка ведения журнала",
+    "slideIds": [
+      "s06-07-server-log-q05-section",
+      "s06-07-server-log-q05-concept",
+      "s06-07-server-log-q05-explanation",
+      "s06-07-server-log-q05-logic",
+      "s06-07-server-log-q05-changed",
+      "s06-07-server-log-q05-changed-result",
+      "s06-07-server-log-q05-notebook",
+      "s06-07-server-log-q05-case-input-1",
+      "s06-07-server-log-q05-case",
+      "s06-07-server-log-q05-T01-slide",
+      "s06-07-server-log-q05-T02-slide",
+      "s06-07-server-log-q05-T03-slide",
+      "s06-07-server-log-q05-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q05-logic",
+      "s06-07-server-log-q05-case",
+      "s06-07-server-log-q05-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q06",
+    "lectureId": "s06-07-server-log",
+    "title": "Поиск первопричины",
+    "slideIds": [
+      "s06-07-server-log-q06-section",
+      "s06-07-server-log-q06-concept",
+      "s06-07-server-log-q06-explanation",
+      "s06-07-server-log-q06-logic",
+      "s06-07-server-log-q06-changed",
+      "s06-07-server-log-q06-changed-result",
+      "s06-07-server-log-q06-notebook",
+      "s06-07-server-log-q06-practice-2",
+      "s06-07-server-log-q06-practice-2-code-1",
+      "s06-07-server-log-q06-practice-2-check",
+      "s06-07-server-log-q06-case-input-1",
+      "s06-07-server-log-q06-case",
+      "s06-07-server-log-q06-T01-slide",
+      "s06-07-server-log-q06-T02-slide",
+      "s06-07-server-log-q06-T03-slide",
+      "s06-07-server-log-q06-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q06-logic",
+      "s06-07-server-log-q06-case",
+      "s06-07-server-log-q06-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q07",
+    "lectureId": "s06-07-server-log",
+    "title": "Корреляция с действиями",
+    "slideIds": [
+      "s06-07-server-log-q07-section",
+      "s06-07-server-log-q07-concept",
+      "s06-07-server-log-q07-explanation",
+      "s06-07-server-log-q07-logic",
+      "s06-07-server-log-q07-changed",
+      "s06-07-server-log-q07-changed-result",
+      "s06-07-server-log-q07-notebook",
+      "s06-07-server-log-q07-case-input-1",
+      "s06-07-server-log-q07-case",
+      "s06-07-server-log-q07-T01-slide",
+      "s06-07-server-log-q07-T02-slide",
+      "s06-07-server-log-q07-T03-slide",
+      "s06-07-server-log-q07-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q07-logic",
+      "s06-07-server-log-q07-case",
+      "s06-07-server-log-q07-case-input-1"
+    ]
+  },
+  {
+    "questionId": "s06-07-server-log-q08",
+    "lectureId": "s06-07-server-log",
+    "title": "Закрытие инцидента",
+    "slideIds": [
+      "s06-07-server-log-q08-section",
+      "s06-07-server-log-q08-concept",
+      "s06-07-server-log-q08-explanation",
+      "s06-07-server-log-q08-logic",
+      "s06-07-server-log-q08-changed",
+      "s06-07-server-log-q08-changed-result",
+      "s06-07-server-log-q08-notebook",
+      "s06-07-server-log-q08-practice-3",
+      "s06-07-server-log-q08-practice-3-code-1",
+      "s06-07-server-log-q08-practice-3-check",
+      "s06-07-server-log-q08-case-input-1",
+      "s06-07-server-log-q08-case",
+      "s06-07-server-log-q08-T01-slide",
+      "s06-07-server-log-q08-T02-slide",
+      "s06-07-server-log-q08-T03-slide",
+      "s06-07-server-log-q08-T04-slide"
+    ],
+    "evidenceSlideIds": [
+      "s06-07-server-log-q08-logic",
+      "s06-07-server-log-q08-case",
+      "s06-07-server-log-q08-case-input-1"
+    ]
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-25",
+  "sourceSha256": "766c03aeac3442590a262e2b1f6a6b582416bc8e3292f2065184366aa0b9f82b",
+  "course": "uiabd3",
+  "semester": 6,
+  "lectures": 7,
+  "slides": 871,
+  "questions": 56,
+  "cases": 56,
+  "tasks": 224,
+  "unitTests": 13,
+  "browserCases": {
+    "cases": 56,
+    "actions": 196,
+    "changedInputs": 49,
+    "lockCases": 7,
+    "undo": 56,
+    "mobileWidths": [
+      390,
+      320
+    ],
+    "errors": []
+  },
+  "modals": {
+    "diagramModal": true,
+    "noNewTab": true,
+    "escape": true,
+    "focusRestored": true,
+    "backgroundSlideStable": true,
+    "caseModal": true,
+    "extraGroupAction": false,
+    "presenterAndAudience": true,
+    "caseStateSynchronized": true,
+    "closeSynchronized": true,
+    "errors": []
+  },
+  "catalog": {
+    "catalog": 7,
+    "search": true,
+    "listPersisted": true,
+    "teacherProfilePersisted": true,
+    "themePersisted": true,
+    "threeBooksTogether": true,
+    "legacyLink": true,
+    "mobile": [
+      390,
+      320
+    ],
+    "errors": []
+  },
+  "layout": [
+    {
+      "lecture": "s06-01-client-server-admin-role",
+      "pages": 119,
+      "issues": []
+    },
+    {
+      "lecture": "s06-02-install-initial-configuration",
+      "pages": 128,
+      "issues": []
+    },
+    {
+      "lecture": "s06-03-server-connections",
+      "pages": 121,
+      "issues": []
+    },
+    {
+      "lecture": "s06-04-users-and-privileges",
+      "pages": 123,
+      "issues": []
+    },
+    {
+      "lecture": "s06-05-data-placement",
+      "pages": 125,
+      "issues": []
+    },
+    {
+      "lecture": "s06-06-transactions-locks-deadlocks",
+      "pages": 132,
+      "issues": []
+    },
+    {
+      "lecture": "s06-07-server-log",
+      "pages": 123,
+      "issues": []
+    }
+  ],
+  "sql": {
+    "mysql": "8.4.13",
+    "port": 33063,
+    "checkRefusal": 3819,
+    "studentScopeRefusal": 1044,
+    "writeRefusals": [
+      1142,
+      1142,
+      1142
+    ],
+    "additiveGrantAndRevoke": true,
+    "utf8mb4": {
+      "characters": 2,
+      "bytes": 6
+    },
+    "collations": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "waitDirectionConfirmed": true,
+    "afterTwoUpdates": 8,
+    "deadlockError": 1213,
+    "deadlockFinal": [
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        19
+      ]
+    ],
+    "killQueryKeepsEarlierLock": true,
+    "killConnectionRollsBack": true,
+    "validConfigExit": 0,
+    "invalidConfigExit": 1
+  },
+  "pdf": [
+    {
+      "id": "s06-01-client-server-admin-role",
+      "pages": 119,
+      "sha256": "b25650cc0b8479623d93cab9266eb465585ca3763e876525c73778df8f86c01a"
+    },
+    {
+      "id": "s06-02-install-initial-configuration",
+      "pages": 128,
+      "sha256": "2a4f835da0773a08d6683caac1e1f41c7eb507f55bd65a999b8a236233a29ee9"
+    },
+    {
+      "id": "s06-03-server-connections",
+      "pages": 121,
+      "sha256": "f96bf488ea21abcfefb0f3889d8016c991121dc30f8c579a24702778a0195845"
+    },
+    {
+      "id": "s06-04-users-and-privileges",
+      "pages": 123,
+      "sha256": "08f2ad82c4decbe280a5afabb93b8f7032905502fb454b7cd5ec7cad21bbfd96"
+    },
+    {
+      "id": "s06-05-data-placement",
+      "pages": 125,
+      "sha256": "fdb1b3a00bfbd84e57a780541a999eb7833cea386f44a7e32748478e36eab3b4"
+    },
+    {
+      "id": "s06-06-transactions-locks-deadlocks",
+      "pages": 132,
+      "sha256": "b93accf433d4df4f73679db7ee062f5a5cf43bb331e5f89ceea6a15ff86dff78"
+    },
+    {
+      "id": "s06-07-server-log",
+      "pages": 123,
+      "sha256": "d81d40c6af1a6cff17b3e855bb3e39077808d73c5f0f5f5857641a13086a643a"
+    }
+  ],
+  "standFiles": [
+    "README.md",
+    "client.ps1",
+    "common.ps1",
+    "dump.ps1",
+    "sql/04-rights.sql",
+    "sql/05-encoding.sql",
+    "sql/05-storage.sql",
+    "sql/06-locks.sql",
+    "sql/06-observe.sql",
+    "sql/07-log.sql",
+    "stand.json",
+    "start.ps1",
+    "stop.ps1"
+  ]
+}

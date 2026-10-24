@@ -1,0 +1,1804 @@
+{
+  "schemaVersion": 1,
+  "courseId": "uiabd3",
+  "contentVersion": "uiabd3-2026.10.25",
+  "mode": "autonomous-educational",
+  "keys": {
+    "s06-01-client-server-admin-role-q01-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Серверное правило применяется к разным клиентам, тогда как форма действует только в своём приложении."
+    },
+    "s06-01-client-server-admin-role-q01-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Форма — Проверяет путь своего клиента. CHECK — Проверяет запись на сервере."
+    },
+    "s06-01-client-server-admin-role-q01-T03": {
+      "type": "short",
+      "accepted": [
+        "CHECK"
+      ],
+      "explanation": "Какое ограничение таблицы проверяет qty>0? Ответ: CHECK."
+    },
+    "s06-01-client-server-admin-role-q01-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Форма — Проверяет путь своего клиента. CHECK — Проверяет запись на сервере."
+    },
+    "s06-01-client-server-admin-role-q02-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Нужно проверить результат изменения; интерфейс и история запросов не подтверждают списание."
+    },
+    "s06-01-client-server-admin-role-q02-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Чтение → запись — Может использовать устаревший остаток. Условный UPDATE — Проверяет условие вместе с изменением."
+    },
+    "s06-01-client-server-admin-role-q02-T03": {
+      "type": "short",
+      "accepted": [
+        "UPDATE"
+      ],
+      "explanation": "Какой SQL-оператор изменяет остаток с условием WHERE? Ответ: UPDATE."
+    },
+    "s06-01-client-server-admin-role-q02-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Чтение → запись — Может использовать устаревший остаток. Условный UPDATE — Проверяет условие вместе с изменением."
+    },
+    "s06-01-client-server-admin-role-q03-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Серверный идентификатор указывает на фактическое соединение."
+    },
+    "s06-01-client-server-admin-role-q03-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Новое соединение — Собственное состояние сеанса. Повторная выдача из пула — Может сохранить прежнее состояние."
+    },
+    "s06-01-client-server-admin-role-q03-T03": {
+      "type": "short",
+      "accepted": [
+        "CONNECTION_ID",
+        "CONNECTION_ID()"
+      ],
+      "explanation": "Какая функция возвращает идентификатор соединения? Ответ: CONNECTION_ID."
+    },
+    "s06-01-client-server-admin-role-q03-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Новое соединение — Собственное состояние сеанса. Повторная выдача из пула — Может сохранить прежнее состояние."
+    },
+    "s06-01-client-server-admin-role-q04-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Потеря ответа оставляет неопределённость относительно выполненного изменения."
+    },
+    "s06-01-client-server-admin-role-q04-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Ответ получен — Есть явное свидетельство выполнения. Ответ потерян — Нужно проверить фактическое состояние."
+    },
+    "s06-01-client-server-admin-role-q04-T03": {
+      "type": "short",
+      "accepted": [
+        "COMMIT"
+      ],
+      "explanation": "Как называется фиксация транзакции командой SQL? Ответ: COMMIT."
+    },
+    "s06-01-client-server-admin-role-q04-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Ответ получен — Есть явное свидетельство выполнения. Ответ потерян — Нужно проверить фактическое состояние."
+    },
+    "s06-01-client-server-admin-role-q05-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Проверяется поведение субъекта, которому предназначено право."
+    },
+    "s06-01-client-server-admin-role-q05-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Разработчик клиента — Пользовательский сценарий. Администратор — Эксплуатация сервера."
+    },
+    "s06-01-client-server-admin-role-q05-T03": {
+      "type": "short",
+      "accepted": [
+        "администратор"
+      ],
+      "explanation": "Кто отвечает за конфигурацию и доступность экземпляра? Ответ: администратор."
+    },
+    "s06-01-client-server-admin-role-q05-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Разработчик клиента — Пользовательский сценарий. Администратор — Эксплуатация сервера."
+    },
+    "s06-01-client-server-admin-role-q06-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Проверка относится к конкретному запросу и сеансу."
+    },
+    "s06-01-client-server-admin-role-q06-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "TCP-проверка — Доступность точки соединения. SELECT — Выполнение SQL в подтверждённом контексте."
+    },
+    "s06-01-client-server-admin-role-q06-T03": {
+      "type": "short",
+      "accepted": [
+        "SELECT"
+      ],
+      "explanation": "Каким запросом без изменения данных можно проверить выполнение SQL? Ответ: SELECT."
+    },
+    "s06-01-client-server-admin-role-q06-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "TCP-проверка — Доступность точки соединения. SELECT — Выполнение SQL в подтверждённом контексте."
+    },
+    "s06-01-client-server-admin-role-q07-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "USE не создаёт новое сетевое соединение."
+    },
+    "s06-01-client-server-admin-role-q07-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Экземпляр — Процесс с конфигурацией и данными. База — Логическое пространство объектов."
+    },
+    "s06-01-client-server-admin-role-q07-T03": {
+      "type": "short",
+      "accepted": [
+        "порт"
+      ],
+      "explanation": "Какой параметр TCP различает два экземпляра на одном адресе? Ответ: порт."
+    },
+    "s06-01-client-server-admin-role-q07-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Экземпляр — Процесс с конфигурацией и данными. База — Логическое пространство объектов."
+    },
+    "s06-01-client-server-admin-role-q08-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Контекст и ответ нужны, секрет не является доказательством выполнения."
+    },
+    "s06-01-client-server-admin-role-q08-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Симптом — Наблюдаемый отказ. Проверка — Действие с воспроизводимым результатом."
+    },
+    "s06-01-client-server-admin-role-q08-T03": {
+      "type": "short",
+      "accepted": [
+        "симптом"
+      ],
+      "explanation": "Какое слово обозначает наблюдаемое проявление неисправности? Ответ: симптом."
+    },
+    "s06-01-client-server-admin-role-q08-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Симптом — Наблюдаемый отказ. Проверка — Действие с воспроизводимым результатом."
+    },
+    "s06-02-install-initial-configuration-q01-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Версию сервера узнают после подключения через SELECT VERSION()."
+    },
+    "s06-02-install-initial-configuration-q01-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Архив — Программные файлы. Каталог данных — Состояние отдельного экземпляра."
+    },
+    "s06-02-install-initial-configuration-q01-T03": {
+      "type": "short",
+      "accepted": [
+        "x64"
+      ],
+      "explanation": "Какая разрядность архива используется в примере Windows? Ответ: x64."
+    },
+    "s06-02-install-initial-configuration-q01-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Архив — Программные файлы. Каталог данных — Состояние отдельного экземпляра."
+    },
+    "s06-02-install-initial-configuration-q02-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Связанные изменения движка требуют согласованной процедуры копирования и проверки восстановления."
+    },
+    "s06-02-install-initial-configuration-q02-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "basedir — Каталог программ MySQL. datadir — Каталог данных экземпляра."
+    },
+    "s06-02-install-initial-configuration-q02-T03": {
+      "type": "short",
+      "accepted": [
+        "datadir"
+      ],
+      "explanation": "Как называется параметр пути к каталогу данных MySQL? Ответ: datadir."
+    },
+    "s06-02-install-initial-configuration-q02-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "basedir — Каталог программ MySQL. datadir — Каталог данных экземпляра."
+    },
+    "s06-02-install-initial-configuration-q03-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "datadir — параметр серверного экземпляра."
+    },
+    "s06-02-install-initial-configuration-q03-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "[mysqld] — Параметры сервера. [client] — Параметры клиентов."
+    },
+    "s06-02-install-initial-configuration-q03-T03": {
+      "type": "short",
+      "accepted": [
+        "mysqld"
+      ],
+      "explanation": "В какой группе my.ini задают серверный port? Ответ: mysqld."
+    },
+    "s06-02-install-initial-configuration-q03-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "[mysqld] — Параметры сервера. [client] — Параметры клиентов."
+    },
+    "s06-02-install-initial-configuration-q04-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Проверка происходит на уровне ОС и не заменяется SQL-полномочиями."
+    },
+    "s06-02-install-initial-configuration-q04-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Учётная запись ОС — Запуск процесса и доступ к файлам. Учётная запись MySQL — SQL-вход и права на объекты."
+    },
+    "s06-02-install-initial-configuration-q04-T03": {
+      "type": "short",
+      "accepted": [
+        "SCM"
+      ],
+      "explanation": "Какой компонент Windows запускает зарегистрированную службу? Ответ: SCM."
+    },
+    "s06-02-install-initial-configuration-q04-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Учётная запись ОС — Запуск процесса и доступ к файлам. Учётная запись MySQL — SQL-вход и права на объекты."
+    },
+    "s06-02-install-initial-configuration-q05-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Запуск службы и доступность SQL — разные проверяемые этапы."
+    },
+    "s06-02-install-initial-configuration-q05-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Start — Запуск процесса. Stop — Штатное завершение с сохранением данных."
+    },
+    "s06-02-install-initial-configuration-q05-T03": {
+      "type": "short",
+      "accepted": [
+        "останов"
+      ],
+      "explanation": "Какое слово означает штатное завершение работы сервера? Ответ: останов."
+    },
+    "s06-02-install-initial-configuration-q05-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Start — Запуск процесса. Stop — Штатное завершение с сохранением данных."
+    },
+    "s06-02-install-initial-configuration-q06-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Диагностика сохраняет состояние и указывает, какой этап действительно не прошёл."
+    },
+    "s06-02-install-initial-configuration-q06-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Инициализация — Однократная подготовка пустого datadir. Обычный запуск — Открытие уже созданного экземпляра."
+    },
+    "s06-02-install-initial-configuration-q06-T03": {
+      "type": "short",
+      "accepted": [
+        "--initialize"
+      ],
+      "explanation": "Какой ключ создаёт системные структуры и временный пароль root? Ответ: --initialize."
+    },
+    "s06-02-install-initial-configuration-q06-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Инициализация — Однократная подготовка пустого datadir. Обычный запуск — Открытие уже созданного экземпляра."
+    },
+    "s06-02-install-initial-configuration-q07-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Контекст подтверждается также адресом, портом и каталогом данных."
+    },
+    "s06-02-install-initial-configuration-q07-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Запуск процесса — Ещё не подтверждает SQL-вход. Контрольный запрос — Подтверждает нужную версию и контекст."
+    },
+    "s06-02-install-initial-configuration-q07-T03": {
+      "type": "short",
+      "accepted": [
+        "DATABASE",
+        "DATABASE()"
+      ],
+      "explanation": "Какая функция показывает текущую выбранную базу? Ответ: DATABASE."
+    },
+    "s06-02-install-initial-configuration-q07-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Запуск процесса — Ещё не подтверждает SQL-вход. Контрольный запрос — Подтверждает нужную версию и контекст."
+    },
+    "s06-02-install-initial-configuration-q08-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Нужны отдельные проверки запуска, соединения и данных."
+    },
+    "s06-02-install-initial-configuration-q08-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Код возврата 0 — Проверка конфигурации прошла. Рабочий запуск — Нужно проверить отдельно."
+    },
+    "s06-02-install-initial-configuration-q08-T03": {
+      "type": "short",
+      "accepted": [
+        "--validate-config"
+      ],
+      "explanation": "Какой ключ проверяет конфигурацию без обычного запуска? Ответ: --validate-config."
+    },
+    "s06-02-install-initial-configuration-q08-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Код возврата 0 — Проверка конфигурации прошла. Рабочий запуск — Нужно проверить отдельно."
+    },
+    "s06-03-server-connections-q01-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Доступность узла по одному протоколу не равна доступности службы MySQL."
+    },
+    "s06-03-server-connections-q01-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Имя узла — Разрешается в IP-адрес. Порт — Выбирает конечную точку на узле."
+    },
+    "s06-03-server-connections-q01-T03": {
+      "type": "short",
+      "accepted": [
+        "DNS"
+      ],
+      "explanation": "Как называется преобразование имени узла в адрес? Ответ: DNS."
+    },
+    "s06-03-server-connections-q01-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Имя узла — Разрешается в IP-адрес. Порт — Выбирает конечную точку на узле."
+    },
+    "s06-03-server-connections-q02-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Аутентификация и проверка прав происходят позднее."
+    },
+    "s06-03-server-connections-q02-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "-P — Номер порта. -p — Приглашение пароля."
+    },
+    "s06-03-server-connections-q02-T03": {
+      "type": "short",
+      "accepted": [
+        "-P"
+      ],
+      "explanation": "Какой ключ mysql задаёт порт: -P или -p? Ответ: -P."
+    },
+    "s06-03-server-connections-q02-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "-P — Номер порта. -p — Приглашение пароля."
+    },
+    "s06-03-server-connections-q03-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Нужно отдельно проверить прослушивание, маршрут, фильтрацию и серверную учётную запись удалённого источника."
+    },
+    "s06-03-server-connections-q03-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "TCP — Адрес и порт. Локальный транспорт — Может обойти проверку TCP-точки."
+    },
+    "s06-03-server-connections-q03-T03": {
+      "type": "short",
+      "accepted": [
+        "TCP"
+      ],
+      "explanation": "Какой протокол явно задают для проверки 127.0.0.1 и порта? Ответ: TCP."
+    },
+    "s06-03-server-connections-q03-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "TCP — Адрес и порт. Локальный транспорт — Может обойти проверку TCP-точки."
+    },
+    "s06-03-server-connections-q04-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Шифрование канала и проверка личности сервера — разные свойства."
+    },
+    "s06-03-server-connections-q04-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "REQUIRED — Требует шифрование. VERIFY_IDENTITY — Проверяет CA и имя сервера."
+    },
+    "s06-03-server-connections-q04-T03": {
+      "type": "short",
+      "accepted": [
+        "VERIFY_IDENTITY"
+      ],
+      "explanation": "Какой режим TLS проверяет имя сервера по сертификату? Ответ: VERIFY_IDENTITY."
+    },
+    "s06-03-server-connections-q04-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "REQUIRED — Требует шифрование. VERIFY_IDENTITY — Проверяет CA и имя сервера."
+    },
+    "s06-03-server-connections-q05-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Первая команда сообщает о локальной клиентской программе."
+    },
+    "s06-03-server-connections-q05-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "mysql — Программа клиента. mysqld — Процесс сервера."
+    },
+    "s06-03-server-connections-q05-T03": {
+      "type": "short",
+      "accepted": [
+        "VERSION",
+        "VERSION()"
+      ],
+      "explanation": "Какая функция возвращает версию сервера? Ответ: VERSION."
+    },
+    "s06-03-server-connections-q05-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "mysql — Программа клиента. mysqld — Процесс сервера."
+    },
+    "s06-03-server-connections-q06-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Учётная запись ОС и SQL-учётная запись независимы."
+    },
+    "s06-03-server-connections-q06-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "USER() — Представленное имя и адрес клиента. CURRENT_USER() — Учётная запись, определяющая права."
+    },
+    "s06-03-server-connections-q06-T03": {
+      "type": "short",
+      "accepted": [
+        "CURRENT_USER",
+        "CURRENT_USER()"
+      ],
+      "explanation": "Какая функция показывает выбранную сервером учётную запись? Ответ: CURRENT_USER."
+    },
+    "s06-03-server-connections-q06-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "USER() — Представленное имя и адрес клиента. CURRENT_USER() — Учётная запись, определяющая права."
+    },
+    "s06-03-server-connections-q07-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Отказ относится к операции в уже существующем сеансе."
+    },
+    "s06-03-server-connections-q07-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "2003 — Не установлен TCP-сеанс. 1045 — Не прошла аутентификация."
+    },
+    "s06-03-server-connections-q07-T03": {
+      "type": "short",
+      "accepted": [
+        "1045"
+      ],
+      "explanation": "Какой код в разобранном отказе означает Access denied при входе? Ответ: 1045."
+    },
+    "s06-03-server-connections-q07-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "2003 — Не установлен TCP-сеанс. 1045 — Не прошла аутентификация."
+    },
+    "s06-03-server-connections-q08-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Проверяется восстановление конкретного пути и полномочий."
+    },
+    "s06-03-server-connections-q08-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Изменение параметра — Гипотеза об устранении причины. Повтор исходной проверки — Свидетельство результата."
+    },
+    "s06-03-server-connections-q08-T03": {
+      "type": "short",
+      "accepted": [
+        "перепроверка"
+      ],
+      "explanation": "Как называется повтор того же контрольного действия после правки? Ответ: перепроверка."
+    },
+    "s06-03-server-connections-q08-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Изменение параметра — Гипотеза об устранении причины. Повтор исходной проверки — Свидетельство результата."
+    },
+    "s06-04-users-and-privileges-q01-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "MySQL использует запись user@host; объект доступа задаётся отдельно."
+    },
+    "s06-04-users-and-privileges-q01-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "user — Имя учётной записи. host — Часть её серверной идентичности."
+    },
+    "s06-04-users-and-privileges-q01-T03": {
+      "type": "short",
+      "accepted": [
+        "host"
+      ],
+      "explanation": "Какая часть user@host задаёт разрешённый источник подключения? Ответ: host."
+    },
+    "s06-04-users-and-privileges-q01-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "user — Имя учётной записи. host — Часть её серверной идентичности."
+    },
+    "s06-04-users-and-privileges-q02-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Запись существует, но полномочия на данные нужно выдать отдельно."
+    },
+    "s06-04-users-and-privileges-q02-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "CREATE USER — Создаёт учётную запись. GRANT — Выдаёт полномочия."
+    },
+    "s06-04-users-and-privileges-q02-T03": {
+      "type": "short",
+      "accepted": [
+        "GRANT"
+      ],
+      "explanation": "Какой SQL-оператор выдаёт права? Ответ: GRANT."
+    },
+    "s06-04-users-and-privileges-q02-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "CREATE USER — Создаёт учётную запись. GRANT — Выдаёт полномочия."
+    },
+    "s06-04-users-and-privileges-q03-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Имя до точки задаёт базу; звёздочка расширяет объектную область внутри неё."
+    },
+    "s06-04-users-and-privileges-q03-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "GRANT ON app.* — Права в базе app. GRANT ON other.* — Другое пространство объектов."
+    },
+    "s06-04-users-and-privileges-q03-T03": {
+      "type": "short",
+      "accepted": [
+        "*"
+      ],
+      "explanation": "Какой символ в app.* обозначает все объекты базы app? Ответ: *."
+    },
+    "s06-04-users-and-privileges-q03-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "GRANT ON app.* — Права в базе app. GRANT ON other.* — Другое пространство объектов."
+    },
+    "s06-04-users-and-privileges-q04-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Правила доступа к части строк требуют отдельного решения."
+    },
+    "s06-04-users-and-privileges-q04-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Право на таблицу — Операция над таблицей без фильтра строк. Представление — Определённый набор столбцов и строк."
+    },
+    "s06-04-users-and-privileges-q04-T03": {
+      "type": "short",
+      "accepted": [
+        "VIEW"
+      ],
+      "explanation": "Как называется объект, позволяющий скрыть лишние строки при выдаче доступа? Ответ: VIEW."
+    },
+    "s06-04-users-and-privileges-q04-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Право на таблицу — Операция над таблицей без фильтра строк. Представление — Определённый набор столбцов и строк."
+    },
+    "s06-04-users-and-privileges-q05-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Привилегии на разные операции не взаимозаменяемы."
+    },
+    "s06-04-users-and-privileges-q05-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "SELECT — Чтение. UPDATE — Изменение существующих строк."
+    },
+    "s06-04-users-and-privileges-q05-T03": {
+      "type": "short",
+      "accepted": [
+        "DELETE"
+      ],
+      "explanation": "Какой SQL-оператор удаляет строки таблицы? Ответ: DELETE."
+    },
+    "s06-04-users-and-privileges-q05-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "SELECT — Чтение. UPDATE — Изменение существующих строк."
+    },
+    "s06-04-users-and-privileges-q06-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Изменение доступа и удаление субъекта — разные операции."
+    },
+    "s06-04-users-and-privileges-q06-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Отзыв на одном уровне — Не обязательно устраняет другой источник права. SHOW GRANTS — Показывает действующие назначения."
+    },
+    "s06-04-users-and-privileges-q06-T03": {
+      "type": "short",
+      "accepted": [
+        "REVOKE"
+      ],
+      "explanation": "Какой SQL-оператор отзывает выданное право? Ответ: REVOKE."
+    },
+    "s06-04-users-and-privileges-q06-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Отзыв на одном уровне — Не обязательно устраняет другой источник права. SHOW GRANTS — Показывает действующие назначения."
+    },
+    "s06-04-users-and-privileges-q07-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Чтение данных не требует возможности назначать доступ другим."
+    },
+    "s06-04-users-and-privileges-q07-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Чтение отчёта — Может ограничиться SELECT. GRANT OPTION — Разрешает передавать права."
+    },
+    "s06-04-users-and-privileges-q07-T03": {
+      "type": "short",
+      "accepted": [
+        "GRANT OPTION"
+      ],
+      "explanation": "Как называется право передавать выданные полномочия дальше? Ответ: GRANT OPTION."
+    },
+    "s06-04-users-and-privileges-q07-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Чтение отчёта — Может ограничиться SELECT. GRANT OPTION — Разрешает передавать права."
+    },
+    "s06-04-users-and-privileges-q08-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Отрицательная проверка обнаруживает лишние полномочия, незаметные в одном чтении."
+    },
+    "s06-04-users-and-privileges-q08-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Ошибка доступа — Подтверждает запрет этой операции. Таблица не найдена — Не доказывает правильность запрета."
+    },
+    "s06-04-users-and-privileges-q08-T03": {
+      "type": "short",
+      "accepted": [
+        "1142"
+      ],
+      "explanation": "Какой код ошибки в примере подтверждает запрет операции над таблицей? Ответ: 1142."
+    },
+    "s06-04-users-and-privileges-q08-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Ошибка доступа — Подтверждает запрет этой операции. Таблица не найдена — Не доказывает правильность запрета."
+    },
+    "s06-05-data-placement-q01-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "В MySQL SCHEMA — синоним DATABASE; другие СУБД могут использовать другую иерархию."
+    },
+    "s06-05-data-placement-q01-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "MySQL DATABASE — То же пространство, что SCHEMA. Два экземпляра — Независимые процессы и данные."
+    },
+    "s06-05-data-placement-q01-T03": {
+      "type": "short",
+      "accepted": [
+        "SCHEMA"
+      ],
+      "explanation": "Какой синоним DATABASE использует MySQL для того же пространства объектов? Ответ: SCHEMA."
+    },
+    "s06-05-data-placement-q01-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "MySQL DATABASE — То же пространство, что SCHEMA. Два экземпляра — Независимые процессы и данные."
+    },
+    "s06-05-data-placement-q02-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "При необходимости точного количества используют допустимый COUNT(*), учитывая стоимость запроса."
+    },
+    "s06-05-data-placement-q02-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "DATA_LENGTH — Оценка данных. INDEX_LENGTH — Оценка индексов."
+    },
+    "s06-05-data-placement-q02-T03": {
+      "type": "short",
+      "accepted": [
+        "INDEX_LENGTH"
+      ],
+      "explanation": "Какое поле information_schema.tables оценивает объём индексов? Ответ: INDEX_LENGTH."
+    },
+    "s06-05-data-placement-q02-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "DATA_LENGTH — Оценка данных. INDEX_LENGTH — Оценка индексов."
+    },
+    "s06-05-data-placement-q03-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Сервер возвращает собственный параметр физического размещения."
+    },
+    "s06-05-data-placement-q03-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Путь клиента — Локальные файлы программы клиента. @@datadir — Файлы узла MySQL."
+    },
+    "s06-05-data-placement-q03-T03": {
+      "type": "short",
+      "accepted": [
+        "сервера"
+      ],
+      "explanation": "На чьём узле находится путь @@datadir: клиента или сервера? Ответ: сервера."
+    },
+    "s06-05-data-placement-q03-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Путь клиента — Локальные файлы программы клиента. @@datadir — Файлы узла MySQL."
+    },
+    "s06-05-data-placement-q04-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Один пользовательский файл не заменяет состояние СУБД целиком."
+    },
+    "s06-05-data-placement-q04-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Движок — Определяет свойства хранения. Расширение файла — Само не доказывает переносимость объекта."
+    },
+    "s06-05-data-placement-q04-T03": {
+      "type": "short",
+      "accepted": [
+        "InnoDB"
+      ],
+      "explanation": "Какой движок используется в транзакционных примерах? Ответ: InnoDB."
+    },
+    "s06-05-data-placement-q04-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Движок — Определяет свойства хранения. Расширение файла — Само не доказывает переносимость объекта."
+    },
+    "s06-05-data-placement-q05-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Я кодируется двумя байтами, выбранный emoji — четырьмя."
+    },
+    "s06-05-data-placement-q05-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "CHAR_LENGTH — Число символов. OCTET_LENGTH — Число байтов."
+    },
+    "s06-05-data-placement-q05-T03": {
+      "type": "short",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "Сколько байт занимает Я🙂 в utf8mb4? Ответ: 6."
+    },
+    "s06-05-data-placement-q05-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "CHAR_LENGTH — Число символов. OCTET_LENGTH — Число байтов."
+    },
+    "s06-05-data-placement-q06-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Collation участвует в семантике сравнения, а не только в оформлении."
+    },
+    "s06-05-data-placement-q06-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "ai_ci — Нечувствительность к акцентам и регистру. as_cs — Чувствительность к акцентам и регистру."
+    },
+    "s06-05-data-placement-q06-T03": {
+      "type": "short",
+      "accepted": [
+        "cs"
+      ],
+      "explanation": "Какой суффикс collation означает чувствительность к регистру? Ответ: cs."
+    },
+    "s06-05-data-placement-q06-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "ai_ci — Нечувствительность к акцентам и регистру. as_cs — Чувствительность к акцентам и регистру."
+    },
+    "s06-05-data-placement-q07-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "У модели есть явная область включённых данных."
+    },
+    "s06-05-data-placement-q07-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "МБ — 1 000 000 байт. МиБ — 1 048 576 байт."
+    },
+    "s06-05-data-placement-q07-T03": {
+      "type": "short",
+      "accepted": [
+        "МиБ"
+      ],
+      "explanation": "Как называется двоичная единица 1024² байт? Ответ: МиБ."
+    },
+    "s06-05-data-placement-q07-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "МБ — 1 000 000 байт. МиБ — 1 048 576 байт."
+    },
+    "s06-05-data-placement-q08-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Измеряемый ресурс должен соответствовать физическому объекту."
+    },
+    "s06-05-data-placement-q08-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Свободно на data — Ресурс тома данных. Свободно на backup — Ресурс другого тома."
+    },
+    "s06-05-data-placement-q08-T03": {
+      "type": "short",
+      "accepted": [
+        "том"
+      ],
+      "explanation": "Как называется логический раздел хранения, свободное место которого проверяют отдельно? Ответ: том."
+    },
+    "s06-05-data-placement-q08-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Свободно на data — Ресурс тома данных. Свободно на backup — Ресурс другого тома."
+    },
+    "s06-06-transactions-locks-deadlocks-q01-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "После COMMIT транзакция завершена; для нового изменения требуется отдельная операция."
+    },
+    "s06-06-transactions-locks-deadlocks-q01-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "COMMIT — Фиксирует изменения. ROLLBACK — Отменяет незавершённые изменения."
+    },
+    "s06-06-transactions-locks-deadlocks-q01-T03": {
+      "type": "short",
+      "accepted": [
+        "ROLLBACK"
+      ],
+      "explanation": "Какой SQL-оператор отменяет незавершённые изменения транзакции? Ответ: ROLLBACK."
+    },
+    "s06-06-transactions-locks-deadlocks-q01-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "COMMIT — Фиксирует изменения. ROLLBACK — Отменяет незавершённые изменения."
+    },
+    "s06-06-transactions-locks-deadlocks-q02-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Нужно различать согласованное чтение и операции, которым требуется несовместимая блокировка."
+    },
+    "s06-06-transactions-locks-deadlocks-q02-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "UPDATE по PK — Меняет выбранную запись. Другой PK — Может быть независимым ресурсом."
+    },
+    "s06-06-transactions-locks-deadlocks-q02-T03": {
+      "type": "short",
+      "accepted": [
+        "точный"
+      ],
+      "explanation": "Какой первичный ключ влияет на поиск строки в примере: точный или приблизительный? Ответ: точный."
+    },
+    "s06-06-transactions-locks-deadlocks-q02-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "UPDATE по PK — Меняет выбранную запись. Другой PK — Может быть независимым ресурсом."
+    },
+    "s06-06-transactions-locks-deadlocks-q03-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Направление идёт от ожидающего к владельцу блокирующего ресурса."
+    },
+    "s06-06-transactions-locks-deadlocks-q03-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Владелец — Удерживает ресурс. Ожидающий — Запросил несовместимый ресурс."
+    },
+    "s06-06-transactions-locks-deadlocks-q03-T03": {
+      "type": "short",
+      "accepted": [
+        "блокирующий"
+      ],
+      "explanation": "Как называется сеанс, удерживающий нужную другому блокировку? Ответ: блокирующий."
+    },
+    "s06-06-transactions-locks-deadlocks-q03-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Владелец — Удерживает ресурс. Ожидающий — Запросил несовместимый ресурс."
+    },
+    "s06-06-transactions-locks-deadlocks-q04-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Ресурсы принадлежат транзакции и не исчезают только из-за завершения текста текущей команды."
+    },
+    "s06-06-transactions-locks-deadlocks-q04-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Длительность ожидания — Наблюдаемый симптом. Граница транзакции — Определяет освобождение ресурсов."
+    },
+    "s06-06-transactions-locks-deadlocks-q04-T03": {
+      "type": "short",
+      "accepted": [
+        "COMMIT"
+      ],
+      "explanation": "Какой оператор завершает явную транзакцию фиксацией? Ответ: COMMIT."
+    },
+    "s06-06-transactions-locks-deadlocks-q04-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Длительность ожидания — Наблюдаемый симптом. Граница транзакции — Определяет освобождение ресурсов."
+    },
+    "s06-06-transactions-locks-deadlocks-q05-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Обработка ошибки и повтор должны учитывать границу всей транзакции."
+    },
+    "s06-06-transactions-locks-deadlocks-q05-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Очередь A → B — Сама по себе не цикл. A → B → A — Взаимная блокировка."
+    },
+    "s06-06-transactions-locks-deadlocks-q05-T03": {
+      "type": "short",
+      "accepted": [
+        "deadlock"
+      ],
+      "explanation": "Как называется цикл взаимных ожиданий транзакций? Ответ: deadlock."
+    },
+    "s06-06-transactions-locks-deadlocks-q05-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Очередь A → B — Сама по себе не цикл. A → B → A — Взаимная блокировка."
+    },
+    "s06-06-transactions-locks-deadlocks-q06-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Одна отрицательная проверка не устанавливает все альтернативные причины."
+    },
+    "s06-06-transactions-locks-deadlocks-q06-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "THREAD_ID — Внутренний идентификатор потока. PROCESSLIST_ID — Идентификатор соединения для KILL."
+    },
+    "s06-06-transactions-locks-deadlocks-q06-T03": {
+      "type": "short",
+      "accepted": [
+        "data_lock_waits"
+      ],
+      "explanation": "Какая таблица Performance Schema содержит связи ожиданий блокировок данных? Ответ: data_lock_waits."
+    },
+    "s06-06-transactions-locks-deadlocks-q06-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "THREAD_ID — Внутренний идентификатор потока. PROCESSLIST_ID — Идентификатор соединения для KILL."
+    },
+    "s06-06-transactions-locks-deadlocks-q07-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Прерывание оператора и завершение транзакции имеют разные границы."
+    },
+    "s06-06-transactions-locks-deadlocks-q07-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "KILL QUERY — Прерывает текущую команду. KILL CONNECTION — Завершает сеанс и откатывает его транзакцию."
+    },
+    "s06-06-transactions-locks-deadlocks-q07-T03": {
+      "type": "short",
+      "accepted": [
+        "CONNECTION"
+      ],
+      "explanation": "Какой вариант KILL завершает соединение: QUERY или CONNECTION? Ответ: CONNECTION."
+    },
+    "s06-06-transactions-locks-deadlocks-q07-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "KILL QUERY — Прерывает текущую команду. KILL CONNECTION — Завершает сеанс и откатывает его транзакцию."
+    },
+    "s06-06-transactions-locks-deadlocks-q08-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Нужно повторить существенные условия взаимодействия нескольких транзакций."
+    },
+    "s06-06-transactions-locks-deadlocks-q08-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Одиночный UPDATE — Не воспроизводит прежний цикл. Два согласованных сеанса — Позволяют повторить условия взаимодействия."
+    },
+    "s06-06-transactions-locks-deadlocks-q08-T03": {
+      "type": "short",
+      "accepted": [
+        "конкуренцию"
+      ],
+      "explanation": "Что нужно добавить к одиночной операции, чтобы проверить прежний deadlock? Ответ: конкуренцию."
+    },
+    "s06-06-transactions-locks-deadlocks-q08-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Одиночный UPDATE — Не воспроизводит прежний цикл. Два согласованных сеанса — Позволяют повторить условия взаимодействия."
+    },
+    "s06-07-server-log-q01-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Событие происходит в серверном процессе до прикладного запроса."
+    },
+    "s06-07-server-log-q01-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Error log — Диагностика жизненного цикла сервера. Slow log — Медленные запросы по условиям записи."
+    },
+    "s06-07-server-log-q01-T03": {
+      "type": "short",
+      "accepted": [
+        "error log"
+      ],
+      "explanation": "Как называется журнал сервера с сообщениями запуска, останова и ошибок? Ответ: error log."
+    },
+    "s06-07-server-log-q01-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Error log — Диагностика жизненного цикла сервера. Slow log — Медленные запросы по условиям записи."
+    },
+    "s06-07-server-log-q02-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Нужны относящиеся к событию предшествующие записи и последовательность."
+    },
+    "s06-07-server-log-q02-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Время — Когда зарегистрировано сообщение. Компонент — Кто зарегистрировал сообщение."
+    },
+    "s06-07-server-log-q02-T03": {
+      "type": "short",
+      "accepted": [
+        "component"
+      ],
+      "explanation": "Какое поле сообщения указывает компонент-источник? Ответ: component."
+    },
+    "s06-07-server-log-q02-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Время — Когда зарегистрировано сообщение. Компонент — Кто зарегистрировал сообщение."
+    },
+    "s06-07-server-log-q03-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Уровень задаёт важность события, а причинная связь требует отдельного обоснования."
+    },
+    "s06-07-server-log-q03-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Уровень — Серьёзность сообщения. Причина — Требует отдельного доказательства."
+    },
+    "s06-07-server-log-q03-T03": {
+      "type": "short",
+      "accepted": [
+        "ERROR"
+      ],
+      "explanation": "Как называется уровень сообщения о неисправности в примере? Ответ: ERROR."
+    },
+    "s06-07-server-log-q03-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Уровень — Серьёзность сообщения. Причина — Требует отдельного доказательства."
+    },
+    "s06-07-server-log-q04-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Явная зона позволяет сопоставить запись с локальным административным действием."
+    },
+    "s06-07-server-log-q04-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "10:00Z — 10:00 UTC. 13:00+03:00 — Тот же момент времени."
+    },
+    "s06-07-server-log-q04-T03": {
+      "type": "short",
+      "accepted": [
+        "UTC"
+      ],
+      "explanation": "Какая временная зона обозначается суффиксом Z? Ответ: UTC."
+    },
+    "s06-07-server-log-q04-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "10:00Z — 10:00 UTC. 13:00+03:00 — Тот же момент времени."
+    },
+    "s06-07-server-log-q05-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Параметр описывает серверный диагностический выход."
+    },
+    "s06-07-server-log-q05-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "log_error — Направление записи журнала. log_error_verbosity — Подробность сообщений."
+    },
+    "s06-07-server-log-q05-T03": {
+      "type": "short",
+      "accepted": [
+        "log_error"
+      ],
+      "explanation": "Какая переменная показывает путь основного error log? Ответ: log_error."
+    },
+    "s06-07-server-log-q05-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "log_error — Направление записи журнала. log_error_verbosity — Подробность сообщений."
+    },
+    "s06-07-server-log-q06-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Проверяемое вмешательство относится к конкретному условию сообщения."
+    },
+    "s06-07-server-log-q06-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Гипотеза — Предполагаемое объяснение отказа. Проверка конфигурации — Эксперимент для проверки гипотезы."
+    },
+    "s06-07-server-log-q06-T03": {
+      "type": "short",
+      "accepted": [
+        "unknown variable"
+      ],
+      "explanation": "Какая строка в журнале unknown variable указывает на проблему параметра? Ответ: unknown variable."
+    },
+    "s06-07-server-log-q06-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Гипотеза — Предполагаемое объяснение отказа. Проверка конфигурации — Эксперимент для проверки гипотезы."
+    },
+    "s06-07-server-log-q07-T01": {
+      "type": "single",
+      "correct": [
+        "o2"
+      ],
+      "explanation": "Хронология поддерживает гипотезу, но не заменяет её проверку."
+    },
+    "s06-07-server-log-q07-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Совпадение времени — Основание для проверки связи. Воспроизведение механизма — Более сильное свидетельство причины."
+    },
+    "s06-07-server-log-q07-T03": {
+      "type": "short",
+      "accepted": [
+        "нет"
+      ],
+      "explanation": "Доказывает ли близость двух событий по времени причинную связь: да или нет? Ответ: нет."
+    },
+    "s06-07-server-log-q07-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Совпадение времени — Основание для проверки связи. Воспроизведение механизма — Более сильное свидетельство причины."
+    },
+    "s06-07-server-log-q08-T01": {
+      "type": "single",
+      "correct": [
+        "o1"
+      ],
+      "explanation": "Проверяются согласованные контекст, функция и данные."
+    },
+    "s06-07-server-log-q08-T02": {
+      "type": "multiple",
+      "correct": [
+        "o1",
+        "o3"
+      ],
+      "explanation": "Исчезло сообщение — Одно наблюдение. Повтор исходной операции — Проверка нужной функции."
+    },
+    "s06-07-server-log-q08-T03": {
+      "type": "short",
+      "accepted": [
+        "восстановление"
+      ],
+      "explanation": "Как называется подтверждённое возвращение нужной функции после исправления? Ответ: восстановление."
+    },
+    "s06-07-server-log-q08-T04": {
+      "type": "matching",
+      "pairs": {
+        "i1": "o1",
+        "i2": "o2",
+        "i3": "o3",
+        "i4": "o4"
+      },
+      "explanation": "Исчезло сообщение — Одно наблюдение. Повтор исходной операции — Проверка нужной функции."
+    }
+  }
+}

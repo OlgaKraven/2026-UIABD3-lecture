@@ -1,0 +1,394 @@
+[
+  {
+    "slideId": "s06-01-client-server-admin-role-q01-logic",
+    "purpose": "Граница клиентской ответственности",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Единое ограничение сохраняется независимо от того, каким клиентом отправлен запрос."
+  },
+  {
+    "slideId": "s06-01-client-server-admin-role-q02-logic",
+    "purpose": "Граница серверной ответственности",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Повторная запись единицы скрывает две заявки на восемь единиц. Условное изменение допускает только одно списание."
+  },
+  {
+    "slideId": "s06-01-client-server-admin-role-q03-logic",
+    "purpose": "Сеанс и соединение",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Переменная принадлежит соединению 101. Другому соединению нужен собственный SET."
+  },
+  {
+    "slideId": "s06-01-client-server-admin-role-q04-logic",
+    "purpose": "Запрос и ответ сервера",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Ошибка связи относится к доставке ответа. Состояние данных проверяется отдельно."
+  },
+  {
+    "slideId": "s06-01-client-server-admin-role-q05-logic",
+    "purpose": "Роль администратора",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Роль определяется конкретной операцией и областью ответственности."
+  },
+  {
+    "slideId": "s06-01-client-server-admin-role-q06-logic",
+    "purpose": "Минимальная проверка работоспособности",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Каждый шаг подтверждает свой уровень. Успех первого шага не заменяет последующие."
+  },
+  {
+    "slideId": "s06-01-client-server-admin-role-q07-logic",
+    "purpose": "Экземпляр и база",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Совпадение имени базы не делает соединения эквивалентными."
+  },
+  {
+    "slideId": "s06-01-client-server-admin-role-q08-logic",
+    "purpose": "Административная фиксация",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Краткость допустима, если сохранены существенные условия и результат."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q01-logic",
+    "purpose": "Выбор дистрибутива",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Наличие mysql.exe подтверждает клиент, а не установленный сервер."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q02-logic",
+    "purpose": "Каталог данных",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Отдельный путь позволяет различать программу, конфигурацию и данные."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q03-logic",
+    "purpose": "Файл конфигурации",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Группы конфигурации влияют на разные процессы."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q04-logic",
+    "purpose": "Служба операционной системы",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Нужно управлять конкретной учебной службой, сохраняя различие ОС и SQL."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q05-logic",
+    "purpose": "Запуск и останов",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Следующая проверка зависит от подтверждённого состояния службы."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q06-logic",
+    "purpose": "Инициализация экземпляра",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Инициализация и запуск — разные операции."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q07-logic",
+    "purpose": "Smoke-тест установки",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "В протокол попадает фактический вывод каждого уровня."
+  },
+  {
+    "slideId": "s06-02-install-initial-configuration-q08-logic",
+    "purpose": "Откат изменения",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Успех проверки конфигурации и успех реального запуска фиксируются отдельно."
+  },
+  {
+    "slideId": "s06-03-server-connections-q01-logic",
+    "purpose": "Адрес сервера",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Пароль не исправляет ошибочно выбранный сетевой узел."
+  },
+  {
+    "slideId": "s06-03-server-connections-q02-logic",
+    "purpose": "Сетевой порт",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Совпадение IP без правильного порта не выбирает нужный экземпляр."
+  },
+  {
+    "slideId": "s06-03-server-connections-q03-logic",
+    "purpose": "Локальное подключение",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Команда однозначно задаёт локальный TCP, не полагаясь на неявный выбор клиента."
+  },
+  {
+    "slideId": "s06-03-server-connections-q04-logic",
+    "purpose": "Удалённое подключение",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Проверка каждого уровня отвечает на свой вопрос; открытие порта не выдаёт SQL-права."
+  },
+  {
+    "slideId": "s06-03-server-connections-q05-logic",
+    "purpose": "Клиентская программа",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Сначала сравнивают фактические параметры, затем поведение программ."
+  },
+  {
+    "slideId": "s06-03-server-connections-q06-logic",
+    "purpose": "Аутентификация учётной записи",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Смена пароля не исправляет отсутствующее соответствие источнику."
+  },
+  {
+    "slideId": "s06-03-server-connections-q07-logic",
+    "purpose": "Типовые отказы",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Переустановка службы не является минимальным исправлением права на SELECT."
+  },
+  {
+    "slideId": "s06-03-server-connections-q08-logic",
+    "purpose": "Доказательство восстановления",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Успех связан с исходным сценарием, а не с произвольным другим входом."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q01-logic",
+    "purpose": "Идентичность пользователя",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Права рассматриваются для фактически сопоставленной записи."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q02-logic",
+    "purpose": "Создание учётной записи",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Существование записи и разрешение чтения — разные состояния."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q03-logic",
+    "purpose": "Права на базу",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Область базы покрывает несколько таблиц, но не все базы экземпляра."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q04-logic",
+    "purpose": "Права на таблицу",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Область объекта и вид операции задаются независимо."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q05-logic",
+    "purpose": "Права на операцию",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Проверяются и разрешённая функция, и лишние возможности."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q06-logic",
+    "purpose": "Выдача и отзыв",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Удаление одного разрешения не всегда убирает эффективное действие."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q07-logic",
+    "purpose": "Наименьшие привилегии",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Профили получены из функций, а не из желания выдать одинаковый ALL всем."
+  },
+  {
+    "slideId": "s06-04-users-and-privileges-q08-logic",
+    "purpose": "Аудит доступа",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Успешное чтение не обнаружило бы лишний UPDATE без отрицательного теста."
+  },
+  {
+    "slideId": "s06-05-data-placement-q01-logic",
+    "purpose": "База и схема в MySQL",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Одинаковая часть orders не объединяет два объекта."
+  },
+  {
+    "slideId": "s06-05-data-placement-q02-logic",
+    "purpose": "Таблицы и индексы",
+    "kind": "bars",
+    "catalogGroup": "Сравнение величин",
+    "shows": "Сумма этих двух оценок равна 15 МиБ, но не описывает все файлы экземпляра."
+  },
+  {
+    "slideId": "s06-05-data-placement-q03-logic",
+    "purpose": "Каталог данных",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Свободное место на диске клиента C не является запасом datadir сервера S."
+  },
+  {
+    "slideId": "s06-05-data-placement-q04-logic",
+    "purpose": "Файлы и движок хранения",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Настройка по умолчанию не описывает автоматически историю каждой существующей таблицы."
+  },
+  {
+    "slideId": "s06-05-data-placement-q05-logic",
+    "purpose": "Кодировка",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Количество символов и байтов отвечает на разные вопросы."
+  },
+  {
+    "slideId": "s06-05-data-placement-q06-logic",
+    "purpose": "Правила сравнения",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Одинаковая кодировка не означает одинаковое сравнение."
+  },
+  {
+    "slideId": "s06-05-data-placement-q07-logic",
+    "purpose": "Оценка объёма",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Десятичные МБ; 15 МБ — результат заданной модели, не гарантированный размер файлов."
+  },
+  {
+    "slideId": "s06-05-data-placement-q08-logic",
+    "purpose": "Контроль свободного места",
+    "kind": "bars",
+    "catalogGroup": "Сравнение величин",
+    "shows": "Для текущего datadir подтверждён запас 30 ГиБ, а не сумма 230."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q01-logic",
+    "purpose": "Транзакция глазами сервера",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Откат возвращает состояние незавершённой транзакции, а не удаляет таблицу."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q02-logic",
+    "purpose": "Назначение блокировки",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Сам факт наличия блокировки не означает, что все чтения остановлены."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q03-logic",
+    "purpose": "Ожидание",
+    "kind": "graph",
+    "catalogGroup": "Связи и структура",
+    "shows": "Завершение A может дать B возможность продолжить без аварийного вмешательства."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q04-logic",
+    "purpose": "Долгая транзакция",
+    "kind": "timeline",
+    "catalogGroup": "Время и длительность",
+    "shows": "B ждёт три минуты, хотя A может не выполнять активный запрос всё это время."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q05-logic",
+    "purpose": "Взаимная блокировка",
+    "kind": "graph",
+    "catalogGroup": "Связи и структура",
+    "shows": "Цикл устраняется откатом транзакции-жертвы, а не одним ожиданием неизвестного срока."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q06-logic",
+    "purpose": "Прекращение отклика",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Симптом разделяют по подтверждённым уровням."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q07-logic",
+    "purpose": "Безопасное вмешательство",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "После команды проверяют фактическое завершение отката и исчезновение ожидания."
+  },
+  {
+    "slideId": "s06-06-transactions-locks-deadlocks-q08-logic",
+    "purpose": "Проверка после устранения",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Проверяются механизм и сохранность результата, а не только исчезновение сообщения."
+  },
+  {
+    "slideId": "s06-07-server-log-q01-logic",
+    "purpose": "Назначение журнала",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Источник выбирается по диагностическому вопросу."
+  },
+  {
+    "slideId": "s06-07-server-log-q02-logic",
+    "purpose": "Структура записи",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Содержательная гипотеза относится к имени параметра, а не к самому наличию ERROR."
+  },
+  {
+    "slideId": "s06-07-server-log-q03-logic",
+    "purpose": "Уровни сообщений",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Самая ранняя или самая яркая строка не становится причиной автоматически."
+  },
+  {
+    "slideId": "s06-07-server-log-q04-logic",
+    "purpose": "Временная линия",
+    "kind": "timeline",
+    "catalogGroup": "Время и длительность",
+    "shows": "После приведения к UTC ошибка наблюдается позже изменения."
+  },
+  {
+    "slideId": "s06-07-server-log-q05-logic",
+    "purpose": "Настройка ведения журнала",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Путь относится к серверу, а отсутствие локального файла клиента ничего не доказывает."
+  },
+  {
+    "slideId": "s06-07-server-log-q06-logic",
+    "purpose": "Поиск первопричины",
+    "kind": "chain",
+    "catalogGroup": "Порядок действий",
+    "shows": "Связь поддерживается и текстом ошибки, и проверкой исправленного условия."
+  },
+  {
+    "slideId": "s06-07-server-log-q07-logic",
+    "purpose": "Корреляция с действиями",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Сопоставляются и время, и содержательная связь."
+  },
+  {
+    "slideId": "s06-07-server-log-q08-logic",
+    "purpose": "Закрытие инцидента",
+    "kind": "table",
+    "catalogGroup": "Таблицы и матрицы",
+    "shows": "Критерии относятся к одному экземпляру и исходному сценарию."
+  }
+]

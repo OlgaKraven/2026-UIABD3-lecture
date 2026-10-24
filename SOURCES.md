@@ -1,49 +1,22 @@
-# Реестр источников
+# Источники курса
 
-Дата проверки: 2026-08-31.
+Материалы относятся только к 3 курсу и 6 семестру. Семь тем сохранены по исходному составу проекта; снимок исходного содержания — `authoring/source-baseline.json`. Формальное соответствие часам и компетенциям не заявляется без отдельной проверки учебной программы.
 
-Исходный тематический план и учебный план используются только как источники данных и не копируются в публичный репозиторий. Технические утверждения связаны с экранами через `sourceIds` в `src/data/sourceRegistry.ts`.
+Библиография сохранена из исходных лекций: Волк, Осеев, Черепанов (2025); Маркин, части 1–2 (2026); Кузьменко (2024); Евстифеева (2025). Полные описания и ссылки IPR находятся в двух общих слайдах каждой лекции.
 
-## Учебные документы
+Техническая платформа — MySQL 8.4; практическое выполнение проверено на 8.4.13 для Windows x64.
 
-| ID | Источник | Назначение | Размещение | Использование | Публикация |
-|---|---|---|---|---|---|
-| `plan-pm07` | ПМ.07. Тематический план, новая редакция | Формулировки тем, объём и методические границы | `C:\Users\gvadoskr\Desktop\2026-2027\ПиДИС_переработка\ПМ.07_Тематический_план_НОВАЯ_РЕДАКЦИЯ.docx` | Все темы; титульные, вводные и итоговые экраны | Локальный путь; копия не публикуется |
-| `curriculum-2025` | Учебный план 2025, 09.02.07 | Сверка дисциплины и распределения по курсам | `C:\Users\gvadoskr\Yandex.Disk\2026-2027\ЛППР\УП\2025\2025_09.02.07_ИСиП_(3г10м)_Специалист по инф.системам.xlsx` | Конфигурационная проверка | Копия не публикуется |
+- [Инициализация данных](https://dev.mysql.com/doc/refman/8.4/en/data-directory-initialization.html).
+- [Служба Windows](https://dev.mysql.com/doc/refman/8.4/en/windows-start-service.html).
+- [Параметры сервера и validate-config](https://dev.mysql.com/doc/refman/8.4/en/server-options.html).
+- [Подключения](https://dev.mysql.com/doc/refman/8.4/en/connecting.html).
+- [Имена учётных записей](https://dev.mysql.com/doc/refman/8.4/en/account-names.html), [GRANT](https://dev.mysql.com/doc/refman/8.4/en/grant.html), [REVOKE](https://dev.mysql.com/doc/refman/8.4/en/revoke.html).
+- [Кодировки](https://dev.mysql.com/doc/refman/8.4/en/charset-applications.html).
+- [Блокировки InnoDB](https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html), [обработка ошибок](https://dev.mysql.com/doc/refman/8.4/en/innodb-error-handling.html).
+- [Связи ожиданий](https://dev.mysql.com/doc/refman/8.4/en/performance-schema-data-lock-waits-table.html).
+- [KILL](https://dev.mysql.com/doc/refman/8.4/en/kill.html), [SLEEP](https://dev.mysql.com/doc/refman/8.4/en/miscellaneous-functions.html#function_sleep).
+- [Журнал ошибок](https://dev.mysql.com/doc/refman/8.4/en/error-log.html).
 
-Редакторская нормализация: исходная формулировка «Сервер баз данных и администрирование его компонент» отображается как «Сервер баз данных и администрирование его компонентов». Исходный DOCX не изменён.
+Учебные числа и синтетические записи журналов обозначены в материале. Рабочая схема блокировок ограничена точным поиском двух PK и явными транзакциями; выбор жертвы в ней не предсказывает решение настоящего InnoDB.
 
-## Литература пользователя
-
-| ID | Библиографический источник | URL | Экраны |
-|---|---|---|---|
-| `book-volk-2025` | Волк В. К., Осеев В. Ю., Черепанов О. С. Базы данных. 2025. ISBN 978-5-9729-2594-0 | https://www.iprbookshop.ru/books/154413/details | 03 и тематические экраны |
-| `book-markin-part1-2026` | Маркин А. В. Программирование баз данных на SQL и PL/pgSQL. Ч. 1. 2026 | https://www.iprbookshop.ru/books/158904/details | 03 и тематические экраны |
-| `book-markin-part2-2026` | Маркин А. В. Программирование баз данных на SQL и PL/pgSQL. Ч. 2. 2026 | https://www.iprbookshop.ru/books/158905/details | 03 и тематические экраны |
-| `book-kuzmenko-2024` | Кузьменко И. П. Базы данных и SQL. 2024 | https://www.iprbookshop.ru/books/148263/details | 04 |
-| `book-evstifeeva-2025` | Евстифеева Н. А. Теоретические основы баз данных и SQL/PSM для MySQL. 2025 | https://www.iprbookshop.ru/books/163292/details | 04 и тематические экраны |
-
-Полные электронные тексты книг не загружались и не публикуются.
-
-## Официальная техническая документация
-
-| ID | Версия | Раздел | URL | Назначение |
-|---|---|---|---|---|
-| `mysql-84-docs` | MySQL 8.4 | Server Administration | https://dev.mysql.com/doc/refman/8.4/en/server-administration.html | Основная учебная платформа |
-| `postgresql-current-docs` | current на дату обращения | Server Administration | https://www.postgresql.org/docs/current/admin.html | Сравнение в 8-м семестре |
-| `prometheus-docs` | online | Overview | https://prometheus.io/docs/introduction/overview/ | Сбор метрик |
-| `grafana-docs` | latest на дату обращения | Documentation | https://grafana.com/docs/grafana/latest/ | Панели и оповещения |
-| `github-pages-docs` | online | Pages | https://docs.github.com/pages | Публикация |
-| `vite-static-deploy` | Vite 8 | Deploying a Static Site | https://vite.dev/guide/static-deploy.html | Сборка и `base` |
-| `wcag-22` | WCAG 2.2 | Recommendation | https://www.w3.org/TR/WCAG22/ | Доступность |
-
-## Материалы и фирменные ресурсы
-
-| ID | Источник | URL или путь | Использование |
-|---|---|---|---|
-| `uiabd3-materials` | Папка материалов 3-го курса | https://disk.yandex.ru/d/dUq9czY8Gd0FRg | Экран 05, QR-код и каталог |
-| `synergy-logo` | Подлинный логотип пользователя | `C:\Users\gvadoskr\Desktop\Лого выворотка вертикатьный.png` | Каталог, заголовки и QR |
-| `uiabd-rhino` | Общий DBA-носорог | `C:\Users\gvadoskr\Desktop\2026-2027\UIABD_shared_assets\mascot\uiabd-database-rhino.png` | Оба курса, сайт и PDF |
-
-Машиночитаемые поля: название, тип, назначение, версия, дата проверки, официальный статус и ограничение публикации — находятся в `src/data/sourceRegistry.ts`.
-
+[Материалы 3 курса](https://disk.yandex.ru/d/dUq9czY8Gd0FRg). Фирменные логотипы сохранены отдельными ресурсами. Новый маскот 3 курса: `public/brand/mascot/uiabd3-installation.png`; он подключает учебный сервер и работает с конфигурацией.

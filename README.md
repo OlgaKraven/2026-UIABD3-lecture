@@ -1,42 +1,9 @@
-# МДК.07.01 — 3-й курс
+# 6 семестр
 
-Адаптивный сайт-презентация по дисциплине «Управление и автоматизация баз данных». Курс охватывает 7 утверждённых лекционных тем (6 семестр), каждая тема строится генератором `buildDeck(topic, course)` и содержит ровно 85 экранов: 80 базовых и 5 служебных.
-
-## Возможности
-
-- каталог, поиск и фильтрация по семестру;
-- прямые ссылки вида `?topic=[TOPIC_ID]&slide=[1..85]`;
-- клавиатурная навигация, полноэкранный режим, светлая и тёмная темы;
-- сохранение профиля преподавателя, прогресса и ответов в `localStorage`;
-- шесть тематических заданий, отдельное окно результата и ручная самопроверка короткого ответа;
-- статический маршрут `/print?topic=[TOPIC_ID]&variant=student|teacher`;
-- PDF на 85 страниц для студента и преподавателя;
-- локальный Raleway, фирменный логотип, общий DBA-носорог и проверенный QR-код.
-
-## Команды
-
-```bash
-npm install
-npm run lint
-npm run typecheck
-npm run test
-npm run spellcheck
-npm run build
-npm run test:e2e
-npm run export:pdf
-npm run export:pdf -- --topic [TOPIC_ID] --variant student
-npm run export:pdf -- --topic [TOPIC_ID] --variant teacher
-npm run check:pdf
-```
-
-Для CLI-экспорта преподавательских данных можно скопировать `config/teacher-profile.example.json` в `config/teacher-profile.json` и заполнить три поля. Этот файл не предназначен для публикации.
-
-## Адреса
-
-- Репозиторий: https://github.com/OlgaKraven/2026-UIABD3-lecture
-- GitHub Pages: https://olgakraven.github.io/2026-UIABD3-lecture/
-- Материалы: https://disk.yandex.ru/d/dUq9czY8Gd0FRg
-- Локальный проект: `C:\Users\gvadoskr\Desktop\2026-2027\2026-UIABD3-lecture`
-
-Источники и ограничения публикации перечислены в [SOURCES.md](SOURCES.md).
-
+- [Клиент, сервер и роль администратора](https://olgakraven.github.io/2026-UIABD3-lecture/?lecture=s06-01-client-server-admin-role)
+- [Установка и первичная настройка MySQL](https://olgakraven.github.io/2026-UIABD3-lecture/?lecture=s06-02-install-initial-configuration)
+- [Подключения и диагностика отказов](https://olgakraven.github.io/2026-UIABD3-lecture/?lecture=s06-03-server-connections)
+- [Учётные записи и наименьшие привилегии](https://olgakraven.github.io/2026-UIABD3-lecture/?lecture=s06-04-users-and-privileges)
+- [Размещение, кодировки и объём данных](https://olgakraven.github.io/2026-UIABD3-lecture/?lecture=s06-05-data-placement)
+- [Блокировки, ожидания и взаимные блокировки](https://olgakraven.github.io/2026-UIABD3-lecture/?lecture=s06-06-transactions-locks-deadlocks)
+- [Журнал сервера и разбор неисправности](https://olgakraven.github.io/2026-UIABD3-lecture/?lecture=s06-07-server-log)

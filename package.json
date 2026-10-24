@@ -10,17 +10,20 @@
     "lint": "oxlint src scripts tests",
     "test": "vitest run",
     "spellcheck": "node scripts/spellcheck.mjs",
-    "build": "npm run generate:qr && tsc -b && vite build",
+    "build": "node scripts/build-course.mjs && node scripts/clarify-case-conditions.mjs && node scripts/package-stand.mjs && npm run validate:content && tsc -b && vite build && node scripts/build-offline.mjs",
     "preview": "vite preview",
-    "test:e2e": "playwright test",
     "export:pdf": "node scripts/export-pdf.mjs",
-    "check:pdf": "node scripts/check-pdf.mjs"
+    "check:pdf": "node scripts/check-pdf.mjs",
+    "validate:content": "node scripts/validate-course.mjs",
+    "check:privacy": "node scripts/check-course-privacy.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.38.0",
     "motion": "^13.1.1",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "@olgakraven/lecture-engine": "file:engine-extension/runtime",
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
@@ -38,7 +41,7 @@
     "sharp": "^0.35.4",
     "typescript": "~6.0.2",
     "vite": "^8.2.2",
-    "vitest": "^4.1.11"
+    "vitest": "^4.1.11",
+    "@olgakraven/lecture-validation": "file:vendor/olgakraven-lecture-engine-0.2.1-uiabd.1.tgz"
   }
 }
-

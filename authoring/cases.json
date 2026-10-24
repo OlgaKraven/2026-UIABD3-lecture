@@ -1,0 +1,1444 @@
+[
+  {
+    "id": "s06-01-client-server-admin-role-q01",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Граница клиентской ответственности",
+    "returnSlide": "s06-01-client-server-admin-role-q01-case",
+    "context": "Клиент кассы проверяет количество, импортёр такой проверки не имеет. Импортёр отправляет qty=-4.",
+    "operation": "Включайте и отключайте проверку клиента и CHECK таблицы. Отправьте операцию и проследите, где она останавливается.",
+    "solution": "При CHECK отрицательная строка не появляется; без него клиентская проверка защищает только свой путь.",
+    "model": {
+      "type": "integrity",
+      "qty": -4
+    },
+    "condition": {
+      "context": "Клиент кассы проверяет количество, импортёр такой проверки не имеет. Импортёр отправляет qty=-4.",
+      "task": "Включайте и отключайте проверку клиента и CHECK таблицы. Отправьте операцию и проследите, где она останавливается.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q01-case-input-1"
+      ],
+      "initialValues": {
+        "qty": -4,
+        "client": "импортёр",
+        "form": "да",
+        "check": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-01-client-server-admin-role-q02",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Граница серверной ответственности",
+    "returnSlide": "s06-01-client-server-admin-role-q02-case",
+    "context": "На складе 7 деталей, две заявки требуют по 4. Оба клиента прочитали исходный остаток.",
+    "operation": "Сравните клиентский read→write и условный UPDATE. Выполните два списания и сопоставьте остаток с принятыми заявками.",
+    "solution": "При условном UPDATE проходит одна заявка и остаётся 3; два клиентских вычисления могут потерять изменение.",
+    "model": {
+      "type": "stock",
+      "stock": 7,
+      "qty": 4
+    },
+    "condition": {
+      "context": "На складе 7 деталей, две заявки требуют по 4. Оба клиента прочитали исходный остаток.",
+      "task": "Сравните клиентский read→write и условный UPDATE. Выполните два списания и сопоставьте остаток с принятыми заявками.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q02-case-input-1"
+      ],
+      "initialValues": {
+        "stock": 7,
+        "qty": 4,
+        "method": "условный UPDATE"
+      }
+    }
+  },
+  {
+    "id": "s06-01-client-server-admin-role-q03",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Сеанс и соединение",
+    "returnSlide": "s06-01-client-server-admin-role-q03-case",
+    "context": "Соединение A задаёт @branch=5; B должно работать с филиалом 9.",
+    "operation": "Задайте состояние A и B. Сравните два независимых соединения с повторным использованием одного.",
+    "solution": "В независимых сеансах значения изолированы; повторно используемое соединение несёт последнее заданное состояние.",
+    "model": {
+      "type": "session",
+      "a": 5,
+      "b": 9
+    },
+    "condition": {
+      "context": "Соединение A задаёт @branch=5; B должно работать с филиалом 9.",
+      "task": "Задайте состояние A и B. Сравните два независимых соединения с повторным использованием одного.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q03-case-input-1"
+      ],
+      "initialValues": {
+        "a": 5,
+        "b": 9,
+        "pool": "новое соединение",
+        "setB": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-01-client-server-admin-role-q04",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Запрос и ответ сервера",
+    "returnSlide": "s06-01-client-server-admin-role-q04-case",
+    "context": "До запроса было 23 заявки; создание одной могло завершиться, но клиент потерял ответ.",
+    "operation": "Выполните серверную операцию, затем смоделируйте доставку или потерю ответа. Определите, какое состояние знает клиент.",
+    "solution": "При потерянном ответе клиентский исход неопределён; число записей на сервере нельзя вывести только из сообщения связи.",
+    "model": {
+      "type": "response",
+      "before": 23
+    },
+    "condition": {
+      "context": "До запроса было 23 заявки; создание одной могло завершиться, но клиент потерял ответ.",
+      "task": "Выполните серверную операцию, затем смоделируйте доставку или потерю ответа. Определите, какое состояние знает клиент.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q04-case-input-1"
+      ],
+      "initialValues": {
+        "before": 23,
+        "committed": "да",
+        "response": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-01-client-server-admin-role-q05",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Роль администратора",
+    "returnSlide": "s06-01-client-server-admin-role-q05-case",
+    "context": "Отчётчик должен читать заявки, а администратор — управлять конфигурацией экземпляра.",
+    "operation": "Настройте полномочия отчётчика. Проверьте чтение, изменение данных и доступ к службе по матрице ответственности.",
+    "solution": "Отчётная роль не получает управление службой из-за необходимости читать данные.",
+    "model": {
+      "type": "responsibility"
+    },
+    "condition": {
+      "context": "Отчётчик должен читать заявки, а администратор — управлять конфигурацией экземпляра.",
+      "task": "Настройте полномочия отчётчика. Проверьте чтение, изменение данных и доступ к службе по матрице ответственности.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q05-case-input-1"
+      ],
+      "initialValues": {
+        "role": "SELECT",
+        "service": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-01-client-server-admin-role-q06",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Минимальная проверка работоспособности",
+    "returnSlide": "s06-01-client-server-admin-role-q06-case",
+    "context": "Окно клиента открыто. По отдельности могут быть остановлена служба, закрыт порт или запрещён вход.",
+    "operation": "Выполните проверки службы, TCP и SQL. Измените один уровень и повторите проход.",
+    "solution": "Отказ локализуется на первом неподтверждённом уровне; открытое окно не считается проверкой сервера.",
+    "model": {
+      "type": "smoke"
+    },
+    "condition": {
+      "context": "Окно клиента открыто. По отдельности могут быть остановлена служба, закрыт порт или запрещён вход.",
+      "task": "Выполните проверки службы, TCP и SQL. Измените один уровень и повторите проход.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q06-case-input-1"
+      ],
+      "initialValues": {
+        "serverPort": 33063,
+        "clientPort": 33063,
+        "running": "да",
+        "auth": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-01-client-server-admin-role-q07",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Экземпляр и база",
+    "returnSlide": "s06-01-client-server-admin-role-q07-case",
+    "context": "Два экземпляра слушают порты 3311 и 3312; имя базы training3 совпадает.",
+    "operation": "Выберите экземпляр и его порт, проверьте контекст и измените учебную строку. Сопоставьте независимые данные двух баз с одинаковым именем.",
+    "solution": "Порт выбирает экземпляр; USE меняет логическую базу внутри текущего соединения.",
+    "model": {
+      "type": "namespace",
+      "a": 3311,
+      "b": 3312
+    },
+    "condition": {
+      "context": "Два экземпляра слушают порты 3311 и 3312; имя базы training3 совпадает.",
+      "task": "Выберите экземпляр и его порт, проверьте контекст и измените учебную строку. Сопоставьте независимые данные двух баз с одинаковым именем.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q07-case-input-1"
+      ],
+      "initialValues": {
+        "a": 3311,
+        "b": 3312,
+        "target": "A"
+      }
+    }
+  },
+  {
+    "id": "s06-01-client-server-admin-role-q08",
+    "lectureId": "s06-01-client-server-admin-role",
+    "semester": 6,
+    "title": "Административная фиксация",
+    "returnSlide": "s06-01-client-server-admin-role-q08-case",
+    "context": "Карточка содержит команду и ответ, но адрес пропущен, а пароль записан открыто.",
+    "operation": "Соберите воспроизводимую карточку и удалите секрет, сохранив адрес, команду и диагностику.",
+    "solution": "Протокол сохраняет контекст без раскрытия пароля; отсутствие адреса отмечается как пробел.",
+    "model": {
+      "type": "record"
+    },
+    "condition": {
+      "context": "Карточка содержит команду и ответ, но адрес пропущен, а пароль записан открыто.",
+      "task": "Соберите воспроизводимую карточку и удалите секрет, сохранив адрес, команду и диагностику.",
+      "inputSlides": [
+        "s06-01-client-server-admin-role-q08-case-input-1"
+      ],
+      "initialValues": {
+        "address": "нет",
+        "secret": "да",
+        "command": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q01",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Выбор дистрибутива",
+    "returnSlide": "s06-02-install-initial-configuration-q01-case",
+    "context": "Нужен сервер Windows x64 ветки 8.4. В папке три пакета с разными ОС и составом.",
+    "operation": "Выберите пакет, сверяйте платформу, состав и контрольную сумму. Разверните только прошедший проверку вариант.",
+    "solution": "Копирование подходящих бинарных файлов — начало установки; экземпляр и служба создаются дальше.",
+    "model": {
+      "type": "distribution"
+    },
+    "condition": {
+      "context": "Нужен сервер Windows x64 ветки 8.4. В папке три пакета с разными ОС и составом.",
+      "task": "Выберите пакет, сверяйте платформу, состав и контрольную сумму. Разверните только прошедший проверку вариант.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q01-case-input-1"
+      ],
+      "initialValues": {
+        "package": "Windows x64 server 8.4",
+        "checksum": "совпала"
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q02",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Каталог данных",
+    "returnSlide": "s06-02-install-initial-configuration-q02-case",
+    "context": "Для нового экземпляра предложен каталог с чужими данными или новый пустой каталог; права службы отличаются.",
+    "operation": "Выберите datadir и проверьте пустоту, владельца и запись. Проследите, при каких условиях разрешена инициализация.",
+    "solution": "Непустой чужой каталог не переинициализируется; доступ ОС проверяется для фактической службы.",
+    "model": {
+      "type": "datadir"
+    },
+    "condition": {
+      "context": "Для нового экземпляра предложен каталог с чужими данными или новый пустой каталог; права службы отличаются.",
+      "task": "Выберите datadir и проверьте пустоту, владельца и запись. Проследите, при каких условиях разрешена инициализация.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q02-case-input-1"
+      ],
+      "initialValues": {
+        "folder": "чужие данные",
+        "write": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q03",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Файл конфигурации",
+    "returnSlide": "s06-02-install-initial-configuration-q03-case",
+    "context": "Серверный файл задаёт 3310, клиентский — 3306. Доступны два пути конфигурации.",
+    "operation": "Выберите читаемый файл и порт клиента. Примените параметры и проверьте, совпал ли адрес подключения с сервером.",
+    "solution": "Успех определяется фактическим чтением нужного файла и согласованием порта, а не именем ini.",
+    "model": {
+      "type": "configuration",
+      "serverPort": 3310,
+      "clientPort": 3306
+    },
+    "condition": {
+      "context": "Серверный файл задаёт 3310, клиентский — 3306. Доступны два пути конфигурации.",
+      "task": "Выберите читаемый файл и порт клиента. Примените параметры и проверьте, совпал ли адрес подключения с сервером.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q03-case-input-1"
+      ],
+      "initialValues": {
+        "serverPort": 3310,
+        "clientPort": 3306,
+        "file": "study.ini",
+        "group": "mysqld"
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q04",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Служба операционной системы",
+    "returnSlide": "s06-02-install-initial-configuration-q04-case",
+    "context": "Учебная и рабочая службы имеют разные имена. Учебная служба ещё не зарегистрирована.",
+    "operation": "Зарегистрируйте в модели нужное имя и команду, затем проверьте, какой экземпляр будет запущен.",
+    "solution": "Изменяется только выбранная учебная запись службы; данные и соседняя служба не становятся её частью.",
+    "model": {
+      "type": "service"
+    },
+    "condition": {
+      "context": "Учебная и рабочая службы имеют разные имена. Учебная служба ещё не зарегистрирована.",
+      "task": "Зарегистрируйте в модели нужное имя и команду, затем проверьте, какой экземпляр будет запущен.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q04-case-input-1"
+      ],
+      "initialValues": {
+        "name": "MySQL84Study",
+        "exists": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q05",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Запуск и останов",
+    "returnSlide": "s06-02-install-initial-configuration-q05-case",
+    "context": "Учебная служба остановлена, конфигурация корректна. Нужно выполнить запуск, проверку и штатный останов.",
+    "operation": "Запускайте и останавливайте модель службы. Проверяйте состояния перед подключением и повторным запуском.",
+    "solution": "SQL доступен в Running; завершение подтверждается Stopped, а не фактом нажатия кнопки.",
+    "model": {
+      "type": "lifecycle"
+    },
+    "condition": {
+      "context": "Учебная служба остановлена, конфигурация корректна. Нужно выполнить запуск, проверку и штатный останов.",
+      "task": "Запускайте и останавливайте модель службы. Проверяйте состояния перед подключением и повторным запуском.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q05-case-input-1"
+      ],
+      "initialValues": {
+        "config": "да",
+        "openTx": 0
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q06",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Инициализация экземпляра",
+    "returnSlide": "s06-02-install-initial-configuration-q06-case",
+    "context": "Каталог может быть пустым либо уже содержать инициализированный экземпляр.",
+    "operation": "Проверьте состояние каталога и выполните допустимую операцию. Сравните инициализацию с обычным запуском.",
+    "solution": "Инициализация допустима для нового пустого каталога; готовый экземпляр запускают без повторного создания структуры.",
+    "model": {
+      "type": "initialization"
+    },
+    "condition": {
+      "context": "Каталог может быть пустым либо уже содержать инициализированный экземпляр.",
+      "task": "Проверьте состояние каталога и выполните допустимую операцию. Сравните инициализацию с обычным запуском.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q06-case-input-1"
+      ],
+      "initialValues": {
+        "data": "пустой",
+        "secure": "--initialize"
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q07",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Smoke-тест установки",
+    "returnSlide": "s06-02-install-initial-configuration-q07-case",
+    "context": "Учебный экземпляр должен слушать 3313; клиент по привычке использует 3306.",
+    "operation": "Выполните smoke-тест, измените порт клиента и повторите проверку фактического контекста.",
+    "solution": "Нужный результат получен только на адресе учебного экземпляра; чужой сервер не подтверждает установку.",
+    "model": {
+      "type": "smoke",
+      "port": 3313,
+      "clientPort": 3306
+    },
+    "condition": {
+      "context": "Учебный экземпляр должен слушать 3313; клиент по привычке использует 3306.",
+      "task": "Выполните smoke-тест, измените порт клиента и повторите проверку фактического контекста.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q07-case-input-1"
+      ],
+      "initialValues": {
+        "serverPort": 3313,
+        "clientPort": 3306,
+        "running": "да",
+        "auth": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-02-install-initial-configuration-q08",
+    "lectureId": "s06-02-install-initial-configuration",
+    "semester": 6,
+    "title": "Откат изменения",
+    "returnSlide": "s06-02-install-initial-configuration-q08-case",
+    "context": "Рабочий порт 3314; изменённый ini содержит неизвестную опцию. Исходная копия сохранена.",
+    "operation": "Проверьте изменённый файл, выполните возврат к рабочему и заново проверьте запуск в модели.",
+    "solution": "Возврат исправляет параметры; повторный SQL и журнал подтверждают результат, а данные сохраняются.",
+    "model": {
+      "type": "rollback",
+      "port": 3314
+    },
+    "condition": {
+      "context": "Рабочий порт 3314; изменённый ini содержит неизвестную опцию. Исходная копия сохранена.",
+      "task": "Проверьте изменённый файл, выполните возврат к рабочему и заново проверьте запуск в модели.",
+      "inputSlides": [
+        "s06-02-install-initial-configuration-q08-case-input-1"
+      ],
+      "initialValues": {
+        "option": "неизвестный",
+        "copy": "исходная"
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q01",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Адрес сервера",
+    "returnSlide": "s06-03-server-connections-q01-case",
+    "context": "По карте стенда нужен 192.0.2.25, а имя возвращает 192.0.2.26.",
+    "operation": "Разрешите имя, сопоставьте полученный адрес с картой и исправьте выбранное соответствие в модели.",
+    "solution": "Проверка продолжается после подтверждения адреса; аутентификацию нельзя диагностировать по ошибке имени.",
+    "model": {
+      "type": "address",
+      "expected": "192.0.2.25",
+      "actual": "192.0.2.26"
+    },
+    "condition": {
+      "context": "По карте стенда нужен 192.0.2.25, а имя возвращает 192.0.2.26.",
+      "task": "Разрешите имя, сопоставьте полученный адрес с картой и исправьте выбранное соответствие в модели.",
+      "inputSlides": [
+        "s06-03-server-connections-q01-case-input-1"
+      ],
+      "initialValues": {
+        "actual": "192.0.2.26",
+        "port": 33063
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q02",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Сетевой порт",
+    "returnSlide": "s06-03-server-connections-q02-case",
+    "context": "Нужный экземпляр слушает 3320. Клиент настроен на 3306; соседняя служба может существовать.",
+    "operation": "Выберите клиентский порт, выполните TCP-проверку и сверку контекста экземпляра.",
+    "solution": "Нужен подтверждённый endpoint 127.0.0.1:3320; номер версии без адреса недостаточен.",
+    "model": {
+      "type": "port",
+      "serverPort": 3320,
+      "clientPort": 3306
+    },
+    "condition": {
+      "context": "Нужный экземпляр слушает 3320. Клиент настроен на 3306; соседняя служба может существовать.",
+      "task": "Выберите клиентский порт, выполните TCP-проверку и сверку контекста экземпляра.",
+      "inputSlides": [
+        "s06-03-server-connections-q02-case-input-1"
+      ],
+      "initialValues": {
+        "serverPort": 3320,
+        "clientPort": 3306,
+        "neighbor": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q03",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Локальное подключение",
+    "returnSlide": "s06-03-server-connections-q03-case",
+    "context": "Требуется сравнить два подключения к одному экземпляру по TCP; в одной команде транспорт не указан.",
+    "operation": "Явно выберите транспорт и адрес. Сопоставьте, какой путь действительно проверяется.",
+    "solution": "Сравнение корректно после согласования транспорта, адреса и порта; локальный успех не закрывает удалённый путь.",
+    "model": {
+      "type": "transport"
+    },
+    "condition": {
+      "context": "Требуется сравнить два подключения к одному экземпляру по TCP; в одной команде транспорт не указан.",
+      "task": "Явно выберите транспорт и адрес. Сопоставьте, какой путь действительно проверяется.",
+      "inputSlides": [
+        "s06-03-server-connections-q03-case-input-1"
+      ],
+      "initialValues": {
+        "transport": "по умолчанию",
+        "port": 33063
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q04",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Удалённое подключение",
+    "returnSlide": "s06-03-server-connections-q04-case",
+    "context": "Удалённый учебный клиент обращается к серверу, слушающему loopback; источник в сетевом правиле также пока запрещён.",
+    "operation": "Настройте в модели прослушивание, разрешённый путь и проверку сертификата. Выполните попытку подключения после каждого изменения.",
+    "solution": "Удалённый путь работает только при согласовании независимых условий; широкое открытие сети не заменяет проверку доверия.",
+    "model": {
+      "type": "remote"
+    },
+    "condition": {
+      "context": "Удалённый учебный клиент обращается к серверу, слушающему loopback; источник в сетевом правиле также пока запрещён.",
+      "task": "Настройте в модели прослушивание, разрешённый путь и проверку сертификата. Выполните попытку подключения после каждого изменения.",
+      "inputSlides": [
+        "s06-03-server-connections-q04-case-input-1"
+      ],
+      "initialValues": {
+        "listen": "loopback",
+        "firewall": "нет",
+        "tls": "REQUIRED",
+        "certificate": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q05",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Клиентская программа",
+    "returnSlide": "s06-03-server-connections-q05-case",
+    "context": "Нужно подключиться к 127.0.0.1:3316 под reader. В GUI сохранён другой порт.",
+    "operation": "Соберите явные параметры терминального клиента и сравните их с профилем GUI.",
+    "solution": "Порт задаётся -P или --port; пароль вводится по приглашению -p. Версия сервера проверяется после входа.",
+    "model": {
+      "type": "client",
+      "port": 3316
+    },
+    "condition": {
+      "context": "Нужно подключиться к 127.0.0.1:3316 под reader. В GUI сохранён другой порт.",
+      "task": "Соберите явные параметры терминального клиента и сравните их с профилем GUI.",
+      "inputSlides": [
+        "s06-03-server-connections-q05-case-input-1"
+      ],
+      "initialValues": {
+        "port": 3306,
+        "key": "-P"
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q06",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Аутентификация учётной записи",
+    "returnSlide": "s06-03-server-connections-q06-case",
+    "context": "reader разрешён с 192.0.2.30; попытка идёт с другого адреса. Пароль может совпадать или нет.",
+    "operation": "Сопоставьте имя и источник, выполните проверку аутентификации, затем отдельно запросите доступ к базе.",
+    "solution": "Доступ к объекту проверяется только после установленной идентичности; успех входа не выдаёт все права.",
+    "model": {
+      "type": "authentication",
+      "allowed": "192.0.2.30",
+      "actual": "192.0.2.31"
+    },
+    "condition": {
+      "context": "reader разрешён с 192.0.2.30; попытка идёт с другого адреса. Пароль может совпадать или нет.",
+      "task": "Сопоставьте имя и источник, выполните проверку аутентификации, затем отдельно запросите доступ к базе.",
+      "inputSlides": [
+        "s06-03-server-connections-q06-case-input-1"
+      ],
+      "initialValues": {
+        "source": "192.0.2.31",
+        "password": "да",
+        "select": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q07",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Типовые отказы",
+    "returnSlide": "s06-03-server-connections-q07-case",
+    "context": "В одном сценарии порт недоступен, в другом отказан вход, в третьем запрещён SELECT.",
+    "operation": "Выполняйте уровни по порядку и меняйте одну причину. Сопоставьте наблюдаемый отказ с достигнутым этапом.",
+    "solution": "Диагностика выбирает следующий проверяемый уровень, а не случайное радикальное действие.",
+    "model": {
+      "type": "connectionDiagnosis"
+    },
+    "condition": {
+      "context": "В одном сценарии порт недоступен, в другом отказан вход, в третьем запрещён SELECT.",
+      "task": "Выполняйте уровни по порядку и меняйте одну причину. Сопоставьте наблюдаемый отказ с достигнутым этапом.",
+      "inputSlides": [
+        "s06-03-server-connections-q07-case-input-1"
+      ],
+      "initialValues": {
+        "tcp": "нет",
+        "auth": "нет",
+        "select": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-03-server-connections-q08",
+    "lectureId": "s06-03-server-connections",
+    "semester": 6,
+    "title": "Доказательство восстановления",
+    "returnSlide": "s06-03-server-connections-q08-case",
+    "context": "Первый отказ получен от клиента branch-A под reader. Контроль можно выполнить из branch-A либо локально под root.",
+    "operation": "Выберите точку и пользователя повторной проверки. Сопоставьте доказательства с исходным сценарием.",
+    "solution": "Только сопоставимая попытка закрывает исходный отказ; административный локальный успех имеет другую область.",
+    "model": {
+      "type": "recheck"
+    },
+    "condition": {
+      "context": "Первый отказ получен от клиента branch-A под reader. Контроль можно выполнить из branch-A либо локально под root.",
+      "task": "Выберите точку и пользователя повторной проверки. Сопоставьте доказательства с исходным сценарием.",
+      "inputSlides": [
+        "s06-03-server-connections-q08-case-input-1"
+      ],
+      "initialValues": {
+        "origin": "localhost/root",
+        "fixed": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q01",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Идентичность пользователя",
+    "returnSlide": "s06-04-users-and-privileges-q01-case",
+    "context": "Есть operator@192.0.2.50 и operator@192.0.2.51. Соединение приходит с одного из этих узлов.",
+    "operation": "Сопоставьте источник с записью и получите её матрицу доступа. Измените источник и повторите проверку.",
+    "solution": "Одинаковое имя не объединяет разные серверные идентичности.",
+    "model": {
+      "type": "identity"
+    },
+    "condition": {
+      "context": "Есть operator@192.0.2.50 и operator@192.0.2.51. Соединение приходит с одного из этих узлов.",
+      "task": "Сопоставьте источник с записью и получите её матрицу доступа. Измените источник и повторите проверку.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q01-case-input-1"
+      ],
+      "initialValues": {
+        "source": "192.0.2.50"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q02",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Создание учётной записи",
+    "returnSlide": "s06-04-users-and-privileges-q02-case",
+    "context": "Новый пользователь course3_report должен входить локально и читать только таблицу отчёта.",
+    "operation": "Создайте запись в модели, проверьте вход до GRANT и после выдачи SELECT.",
+    "solution": "Вход возможен без права чтения таблицы; нужное право назначается отдельной операцией.",
+    "model": {
+      "type": "createAccount"
+    },
+    "condition": {
+      "context": "Новый пользователь course3_report должен входить локально и читать только таблицу отчёта.",
+      "task": "Создайте запись в модели, проверьте вход до GRANT и после выдачи SELECT.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q02-case-input-1"
+      ],
+      "initialValues": {
+        "created": "нет",
+        "grant": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q03",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Права на базу",
+    "returnSlide": "s06-04-users-and-privileges-q03-case",
+    "context": "Нужен отчёт по training3.orders. Можно выдать SELECT на training3.* либо только на orders.",
+    "operation": "Выберите область GRANT и проверьте чтение orders, parts и таблицы другой базы.",
+    "solution": "Сравнение показывает фактическую ширину полномочий и помогает выбрать достаточную область.",
+    "model": {
+      "type": "databaseScope"
+    },
+    "condition": {
+      "context": "Нужен отчёт по training3.orders. Можно выдать SELECT на training3.* либо только на orders.",
+      "task": "Выберите область GRANT и проверьте чтение orders, parts и таблицы другой базы.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q03-case-input-1"
+      ],
+      "initialValues": {
+        "scope": "training3.*",
+        "write": "нет",
+        "delegate": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q04",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Права на таблицу",
+    "returnSlide": "s06-04-users-and-privileges-q04-case",
+    "context": "В базе две таблицы: orders и employees. Отчётчику нужна только orders.",
+    "operation": "Примените табличный GRANT и выполните чтение обеих таблиц в модели.",
+    "solution": "SELECT одной таблицы не раскрывает вторую при отсутствии других источников прав.",
+    "model": {
+      "type": "tableScope"
+    },
+    "condition": {
+      "context": "В базе две таблицы: orders и employees. Отчётчику нужна только orders.",
+      "task": "Примените табличный GRANT и выполните чтение обеих таблиц в модели.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q04-case-input-1"
+      ],
+      "initialValues": {
+        "scope": "training3.*",
+        "write": "нет",
+        "delegate": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q05",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Права на операцию",
+    "returnSlide": "s06-04-users-and-privileges-q05-case",
+    "context": "Оператору нужно менять статус существующей заявки, но не создавать или удалять заявки.",
+    "operation": "Настройте в модели отдельные привилегии и выполните четыре операции.",
+    "solution": "UPDATE может быть разрешён независимо от INSERT и DELETE; лишние полномочия видны в матрице.",
+    "model": {
+      "type": "operationRights"
+    },
+    "condition": {
+      "context": "Оператору нужно менять статус существующей заявки, но не создавать или удалять заявки.",
+      "task": "Настройте в модели отдельные привилегии и выполните четыре операции.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q05-case-input-1"
+      ],
+      "initialValues": {
+        "select": "да",
+        "update": "да",
+        "insert": "нет",
+        "delete": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q06",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Выдача и отзыв",
+    "returnSlide": "s06-04-users-and-privileges-q06-case",
+    "context": "Чтение orders дано через базу и отдельную таблицу. Нужно убрать чтение целиком.",
+    "operation": "Выдавайте и отзывайте права по уровням, затем проверяйте эффективный SELECT.",
+    "solution": "Нужно устранить все относящиеся к действию источники, а не только самый узкий.",
+    "model": {
+      "type": "revoke"
+    },
+    "condition": {
+      "context": "Чтение orders дано через базу и отдельную таблицу. Нужно убрать чтение целиком.",
+      "task": "Выдавайте и отзывайте права по уровням, затем проверяйте эффективный SELECT.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q06-case-input-1"
+      ],
+      "initialValues": {
+        "db": "нет",
+        "table": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q07",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Наименьшие привилегии",
+    "returnSlide": "s06-04-users-and-privileges-q07-case",
+    "context": "Временная роль формирует отчёт только по orders; есть возможность дать запись и передачу прав.",
+    "operation": "Соберите профиль, выполните отчёт и проверку лишних операций. Снимите ненужные выдачи.",
+    "solution": "Достаточность подтверждается работающим отчётом, минимальность — отсутствием лишних операций и области.",
+    "model": {
+      "type": "leastPrivilege"
+    },
+    "condition": {
+      "context": "Временная роль формирует отчёт только по orders; есть возможность дать запись и передачу прав.",
+      "task": "Соберите профиль, выполните отчёт и проверку лишних операций. Снимите ненужные выдачи.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q07-case-input-1"
+      ],
+      "initialValues": {
+        "scope": "training3.*",
+        "write": "нет",
+        "delegate": "нет"
+      }
+    }
+  },
+  {
+    "id": "s06-04-users-and-privileges-q08",
+    "lectureId": "s06-04-users-and-privileges",
+    "semester": 6,
+    "title": "Аудит доступа",
+    "returnSlide": "s06-04-users-and-privileges-q08-case",
+    "context": "В паспорте отчётчик только читает; текущая выдача включает SELECT и UPDATE.",
+    "operation": "Сопоставьте требование и фактическую матрицу, выполните операции и отзовите лишнее.",
+    "solution": "После исправления нужный SELECT сохраняется, UPDATE получает отказ, данные не меняются.",
+    "model": {
+      "type": "accessAudit"
+    },
+    "condition": {
+      "context": "В паспорте отчётчик только читает; текущая выдача включает SELECT и UPDATE.",
+      "task": "Сопоставьте требование и фактическую матрицу, выполните операции и отзовите лишнее.",
+      "inputSlides": [
+        "s06-04-users-and-privileges-q08-case-input-1"
+      ],
+      "initialValues": {
+        "update": "нет",
+        "select": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q01",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "База и схема в MySQL",
+    "returnSlide": "s06-05-data-placement-q01-case",
+    "context": "В двух базах training3 и archive3 есть одноимённая таблица clients.",
+    "operation": "Выберите текущую базу и разрешите полное и неполное имя таблицы в модели.",
+    "solution": "Текущая база влияет на неполное имя, но не переименовывает и не перемещает объект.",
+    "model": {
+      "type": "databaseName"
+    },
+    "condition": {
+      "context": "В двух базах training3 и archive3 есть одноимённая таблица clients.",
+      "task": "Выберите текущую базу и разрешите полное и неполное имя таблицы в модели.",
+      "inputSlides": [
+        "s06-05-data-placement-q01-case-input-1"
+      ],
+      "initialValues": {
+        "db": "training3",
+        "qualified": "clients"
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q02",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "Таблицы и индексы",
+    "returnSlide": "s06-05-data-placement-q02-case",
+    "context": "У таблицы A данные 18 МиБ и индексы 6 МиБ; у B — 9 и 3 МиБ.",
+    "operation": "Сложите части по каждой таблице и затем по базе, не добавляя общий агрегат повторно.",
+    "solution": "A даёт 24 МиБ, B — 12 МиБ, общий оценочный объём 36 МиБ.",
+    "model": {
+      "type": "objectSize",
+      "ad": 18,
+      "ai": 6,
+      "bd": 9,
+      "bi": 3
+    },
+    "condition": {
+      "context": "У таблицы A данные 18 МиБ и индексы 6 МиБ; у B — 9 и 3 МиБ.",
+      "task": "Сложите части по каждой таблице и затем по базе, не добавляя общий агрегат повторно.",
+      "inputSlides": [
+        "s06-05-data-placement-q02-case-input-1"
+      ],
+      "initialValues": {
+        "ad": 18,
+        "ai": 6,
+        "bd": 9,
+        "bi": 3
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q03",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "Каталог данных",
+    "returnSlide": "s06-05-data-placement-q03-case",
+    "context": "Клиент на ноутбуке видит @@datadir=D:/mysql-data/ удалённого учебного сервера.",
+    "operation": "Сопоставьте место выполнения команды ОС с сервером и выберите правильный том.",
+    "solution": "Данные и свободное место относятся к серверу, который вернул переменную, а не к любому компьютеру с диском D.",
+    "model": {
+      "type": "physicalPath"
+    },
+    "condition": {
+      "context": "Клиент на ноутбуке видит @@datadir=D:/mysql-data/ удалённого учебного сервера.",
+      "task": "Сопоставьте место выполнения команды ОС с сервером и выберите правильный том.",
+      "inputSlides": [
+        "s06-05-data-placement-q03-case-input-1"
+      ],
+      "initialValues": {
+        "node": "ноутбук клиента",
+        "volume": "E:"
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q04",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "Файлы и движок хранения",
+    "returnSlide": "s06-05-data-placement-q04-case",
+    "context": "У таблицы известен движок, но её пространство было создано раньше текущего значения настройки.",
+    "operation": "Сопоставьте метаданные таблицы и настройки, затем определите, какой вывод о размещении подтверждён.",
+    "solution": "Параметр и фактическое размещение проверяются совместно; расширение файла само не задаёт весь контракт таблицы.",
+    "model": {
+      "type": "storageEngine"
+    },
+    "condition": {
+      "context": "У таблицы известен движок, но её пространство было создано раньше текущего значения настройки.",
+      "task": "Сопоставьте метаданные таблицы и настройки, затем определите, какой вывод о размещении подтверждён.",
+      "inputSlides": [
+        "s06-05-data-placement-q04-case-input-1"
+      ],
+      "initialValues": {
+        "engine": "InnoDB",
+        "current": "ON",
+        "old": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q05",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "Кодировка",
+    "returnSlide": "s06-05-data-placement-q05-case",
+    "context": "Нужно сохранить одну из строк A, Я, 🙂, Я🙂 в utf8mb4.",
+    "operation": "Выберите текст, закодируйте его в модели и сопоставьте число кодовых точек и байтов.",
+    "solution": "Длина зависит от конкретных символов; полный размер таблицы включает и другие структуры.",
+    "model": {
+      "type": "encoding"
+    },
+    "condition": {
+      "context": "Нужно сохранить одну из строк A, Я, 🙂, Я🙂 в utf8mb4.",
+      "task": "Выберите текст, закодируйте его в модели и сопоставьте число кодовых точек и байтов.",
+      "inputSlides": [
+        "s06-05-data-placement-q05-case-input-1"
+      ],
+      "initialValues": {
+        "text": "Я🙂",
+        "charset": "utf8mb4"
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q06",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "Правила сравнения",
+    "returnSlide": "s06-05-data-placement-q06-case",
+    "context": "В наборе для сравнения есть E и é, а также A и a.",
+    "operation": "Выберите пару и правило. Выполните сравнение и объясните, какие различия учитываются.",
+    "solution": "В заданных парах ai_ci игнорирует регистр и акцент, as_cs различает их; это ограниченная учебная модель этих примеров.",
+    "model": {
+      "type": "collation"
+    },
+    "condition": {
+      "context": "В наборе для сравнения есть E и é, а также A и a.",
+      "task": "Выберите пару и правило. Выполните сравнение и объясните, какие различия учитываются.",
+      "inputSlides": [
+        "s06-05-data-placement-q06-case-input-1"
+      ],
+      "initialValues": {
+        "pair": "E / é",
+        "collation": "utf8mb4_0900_ai_ci"
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q07",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "Оценка объёма",
+    "returnSlide": "s06-05-data-placement-q07-case",
+    "context": "60000 строк, по 180 байт полезных данных; отдельно 2,2 МБ индексов и 4 МБ журнала.",
+    "operation": "Рассчитайте категории в одной единице и сформируйте итог без двойного счёта.",
+    "solution": "Полезные данные 10,8 МБ; вместе с двумя отдельными категориями 17 МБ. Физический объём проверяется отдельно.",
+    "model": {
+      "type": "sizeEstimate",
+      "rows": 60000,
+      "bytes": 180,
+      "index": 2.2,
+      "logs": 4
+    },
+    "condition": {
+      "context": "60000 строк, по 180 байт полезных данных; отдельно 2,2 МБ индексов и 4 МБ журнала.",
+      "task": "Рассчитайте категории в одной единице и сформируйте итог без двойного счёта.",
+      "inputSlides": [
+        "s06-05-data-placement-q07-case-input-1"
+      ],
+      "initialValues": {
+        "rows": 60000,
+        "bytes": 180,
+        "index": 2.2,
+        "logs": 4
+      }
+    }
+  },
+  {
+    "id": "s06-05-data-placement-q08",
+    "lectureId": "s06-05-data-placement",
+    "semester": 6,
+    "title": "Контроль свободного места",
+    "returnSlide": "s06-05-data-placement-q08-case",
+    "context": "Экземпляр использует D:/db3/data, а свободное место измерено на E:.",
+    "operation": "Сопоставьте путь и том, получите свободное место нужного тома и отклоните несопоставимый показатель.",
+    "solution": "Доказательство относится к конкретному серверному тому и времени, а не к сумме дисков компьютера.",
+    "model": {
+      "type": "freeVolume",
+      "dataFree": 28,
+      "otherFree": 160
+    },
+    "condition": {
+      "context": "Экземпляр использует D:/db3/data, а свободное место измерено на E:.",
+      "task": "Сопоставьте путь и том, получите свободное место нужного тома и отклоните несопоставимый показатель.",
+      "inputSlides": [
+        "s06-05-data-placement-q08-case-input-1"
+      ],
+      "initialValues": {
+        "data": 28,
+        "other": 160,
+        "growth": 30
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q01",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Транзакция глазами сервера",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q01-case",
+    "context": "В двух строках PK 201 и 202 по 30 единиц. A должен изменить первую строку в явной транзакции.",
+    "operation": "Начните транзакцию, измените строку и сравните COMMIT с ROLLBACK. Отменяйте действия модели и повторяйте опыт.",
+    "solution": "Незавершённое и зафиксированное состояния различаются; выбранная граница завершения определяет сохранённые данные.",
+    "model": {
+      "type": "locks",
+      "mode": "transaction",
+      "keys": [
+        201,
+        202
+      ],
+      "qty": 30
+    },
+    "condition": {
+      "context": "В двух строках PK 201 и 202 по 30 единиц. A должен изменить первую строку в явной транзакции.",
+      "task": "Начните транзакцию, измените строку и сравните COMMIT с ROLLBACK. Отменяйте действия модели и повторяйте опыт.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q01-case-input-1",
+        "s06-06-transactions-locks-deadlocks-q01-case-input-2"
+      ],
+      "initialValues": {
+        "qty": 30
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q02",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Назначение блокировки",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q02-case",
+    "context": "A удерживает изменение PK 301; рядом существует свободная строка 302.",
+    "operation": "Выбирайте сеанс и строку. Сравните обычное чтение, блокирующее чтение и UPDATE, затем освободите ресурс.",
+    "solution": "Ожидание определяется операцией и ресурсом; блокировка сама по себе является штатным механизмом.",
+    "model": {
+      "type": "locks",
+      "mode": "rowLock",
+      "keys": [
+        301,
+        302
+      ],
+      "qty": 40
+    },
+    "condition": {
+      "context": "A удерживает изменение PK 301; рядом существует свободная строка 302.",
+      "task": "Выбирайте сеанс и строку. Сравните обычное чтение, блокирующее чтение и UPDATE, затем освободите ресурс.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q02-case-input-1",
+        "s06-06-transactions-locks-deadlocks-q02-case-input-2"
+      ],
+      "initialValues": {
+        "qty": 40
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q03",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Ожидание",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q03-case",
+    "context": "A владеет PK 401; B начал изменение той же строки. Данные не должны потеряться.",
+    "operation": "Создайте ожидание, найдите владельца и завершите его транзакцию. Проследите возобновление B.",
+    "solution": "После освобождения ресурса B может продолжить; его собственная транзакция требует отдельного завершения.",
+    "model": {
+      "type": "locks",
+      "mode": "wait",
+      "keys": [
+        401,
+        402
+      ],
+      "qty": 25
+    },
+    "condition": {
+      "context": "A владеет PK 401; B начал изменение той же строки. Данные не должны потеряться.",
+      "task": "Создайте ожидание, найдите владельца и завершите его транзакцию. Проследите возобновление B.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q03-case-input-1",
+        "s06-06-transactions-locks-deadlocks-q03-case-input-2"
+      ],
+      "initialValues": {
+        "qty": 25
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q04",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Долгая транзакция",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q04-case",
+    "context": "A изменил PK 501 и оставил транзакцию открытой; B нуждается в той же строке.",
+    "operation": "Оставьте A без новых команд, запросите строку из B и проверьте состояние. Затем завершите A.",
+    "solution": "Бездействующее соединение и отсутствие удерживаемой транзакции не являются одним состоянием.",
+    "model": {
+      "type": "locks",
+      "mode": "long",
+      "keys": [
+        501,
+        502
+      ],
+      "qty": 35
+    },
+    "condition": {
+      "context": "A изменил PK 501 и оставил транзакцию открытой; B нуждается в той же строке.",
+      "task": "Оставьте A без новых команд, запросите строку из B и проверьте состояние. Затем завершите A.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q04-case-input-1",
+        "s06-06-transactions-locks-deadlocks-q04-case-input-2"
+      ],
+      "initialValues": {
+        "qty": 35
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q05",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Взаимная блокировка",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q05-case",
+    "context": "A и B изменяют строки 601 и 602 в противоположном порядке.",
+    "operation": "Создайте обе связи ожидания, проверьте цикл и сравните откат A с откатом B. Затем повторите с одинаковым порядком.",
+    "solution": "Откат жертвы освобождает её ресурсы; оставшаяся транзакция продолжает работу и завершается отдельно.",
+    "model": {
+      "type": "locks",
+      "mode": "deadlock",
+      "keys": [
+        601,
+        602
+      ],
+      "qty": 50
+    },
+    "condition": {
+      "context": "A и B изменяют строки 601 и 602 в противоположном порядке.",
+      "task": "Создайте обе связи ожидания, проверьте цикл и сравните откат A с откатом B. Затем повторите с одинаковым порядком.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q05-case-input-1",
+        "s06-06-transactions-locks-deadlocks-q05-case-input-2"
+      ],
+      "initialValues": {
+        "qty": 50
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q06",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Прекращение отклика",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q06-case",
+    "context": "Клиент не получает результат. В разных условиях сервер ждёт блокировку, выполняет запрос или потерян сетевой путь.",
+    "operation": "Выполняйте независимые проверки соединения, серверной операции и ожиданий. Сопоставьте их результаты.",
+    "solution": "Подтверждённая связь ожидания требует работы с владельцем; отсутствие связи оставляет другие проверки открытыми.",
+    "model": {
+      "type": "stall"
+    },
+    "condition": {
+      "context": "Клиент не получает результат. В разных условиях сервер ждёт блокировку, выполняет запрос или потерян сетевой путь.",
+      "task": "Выполняйте независимые проверки соединения, серверной операции и ожиданий. Сопоставьте их результаты.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q06-case-input-1"
+      ],
+      "initialValues": {
+        "state": "lock wait"
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q07",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Безопасное вмешательство",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q07-case",
+    "context": "A удерживает PK 701 и выполняет длительный запрос; B ожидает строку 701.",
+    "operation": "Сравните отмену текущего запроса с завершением соединения A. Сопоставьте оставшиеся блокировки и данные.",
+    "solution": "QUERY убирает текущую операцию, CONNECTION завершает сеанс и откатывает незавершённое состояние; последствия различаются.",
+    "model": {
+      "type": "locks",
+      "mode": "kill",
+      "keys": [
+        701,
+        702
+      ],
+      "qty": 45
+    },
+    "condition": {
+      "context": "A удерживает PK 701 и выполняет длительный запрос; B ожидает строку 701.",
+      "task": "Сравните отмену текущего запроса с завершением соединения A. Сопоставьте оставшиеся блокировки и данные.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q07-case-input-1",
+        "s06-06-transactions-locks-deadlocks-q07-case-input-2"
+      ],
+      "initialValues": {
+        "qty": 45
+      }
+    }
+  },
+  {
+    "id": "s06-06-transactions-locks-deadlocks-q08",
+    "lectureId": "s06-06-transactions-locks-deadlocks",
+    "semester": 6,
+    "title": "Проверка после устранения",
+    "returnSlide": "s06-06-transactions-locks-deadlocks-q08-case",
+    "context": "Нужно сравнить одинаковый и противоположный порядок строк 801 и 802 для двух транзакций.",
+    "operation": "Воспроизведите обе последовательности и завершите сеансы. Сравните граф и зафиксированные данные.",
+    "solution": "Для показанного одинакового порядка возможна очередь без цикла; прежний противоположный порядок создаёт цикл.",
+    "model": {
+      "type": "locks",
+      "mode": "recheck",
+      "keys": [
+        801,
+        802
+      ],
+      "qty": 60
+    },
+    "condition": {
+      "context": "Нужно сравнить одинаковый и противоположный порядок строк 801 и 802 для двух транзакций.",
+      "task": "Воспроизведите обе последовательности и завершите сеансы. Сравните граф и зафиксированные данные.",
+      "inputSlides": [
+        "s06-06-transactions-locks-deadlocks-q08-case-input-1",
+        "s06-06-transactions-locks-deadlocks-q08-case-input-2"
+      ],
+      "initialValues": {
+        "qty": 60
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q01",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Назначение журнала",
+    "returnSlide": "s06-07-server-log-q01-case",
+    "context": "Процесс завершается при старте; рядом доступны error, general и slow журналы.",
+    "operation": "Выберите источник. Прочитайте синтетическую запись и выделите события, относящиеся к запуску нужного экземпляра.",
+    "solution": "Выбранный журнал должен содержать свидетельства именно для вопроса запуска.",
+    "model": {
+      "type": "logSource"
+    },
+    "condition": {
+      "context": "Процесс завершается при старте; рядом доступны error, general и slow журналы.",
+      "task": "Выберите источник. Прочитайте синтетическую запись и выделите события, относящиеся к запуску нужного экземпляра.",
+      "inputSlides": [
+        "s06-07-server-log-q01-case-input-1"
+      ],
+      "initialValues": {
+        "source": "error"
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q02",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Структура записи",
+    "returnSlide": "s06-07-server-log-q02-case",
+    "context": "В карточке есть только «ошибка запуска». Полная запись содержит время, уровень и неизвестную опцию.",
+    "operation": "Разберите запись на поля и соберите достаточный фрагмент для повторной проверки конфигурации.",
+    "solution": "Контекст связывает ошибку с экземпляром и параметром; краткий пересказ этого не делает.",
+    "model": {
+      "type": "logFields"
+    },
+    "condition": {
+      "context": "В карточке есть только «ошибка запуска». Полная запись содержит время, уровень и неизвестную опцию.",
+      "task": "Разберите запись на поля и соберите достаточный фрагмент для повторной проверки конфигурации.",
+      "inputSlides": [
+        "s06-07-server-log-q02-case-input-1"
+      ],
+      "initialValues": {
+        "full": "полная"
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q03",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Уровни сообщений",
+    "returnSlide": "s06-07-server-log-q03-case",
+    "context": "В журнале смешаны INFO, WARNING и ERROR разных компонентов.",
+    "operation": "Меняйте фильтр уровня, выделяйте относящиеся к запуску записи и проверяйте, какое сообщение объясняет остановку.",
+    "solution": "Фильтрация не меняет исходные события и не доказывает причину по одному уровню.",
+    "model": {
+      "type": "logLevels"
+    },
+    "condition": {
+      "context": "В журнале смешаны INFO, WARNING и ERROR разных компонентов.",
+      "task": "Меняйте фильтр уровня, выделяйте относящиеся к запуску записи и проверяйте, какое сообщение объясняет остановку.",
+      "inputSlides": [
+        "s06-07-server-log-q03-case-input-1"
+      ],
+      "initialValues": {
+        "level": "ERROR"
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q04",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Временная линия",
+    "returnSlide": "s06-07-server-log-q04-case",
+    "context": "Изменение записано как 12:00:00+03:00, ошибка — как 09:00:04Z.",
+    "operation": "Приведите отметки к одной шкале и постройте порядок. Сравните результат с прямым сравнением часов.",
+    "solution": "Изменение соответствует 09:00:00 UTC; ошибка следует через 4 секунды.",
+    "model": {
+      "type": "logTime"
+    },
+    "condition": {
+      "context": "Изменение записано как 12:00:00+03:00, ошибка — как 09:00:04Z.",
+      "task": "Приведите отметки к одной шкале и постройте порядок. Сравните результат с прямым сравнением часов.",
+      "inputSlides": [
+        "s06-07-server-log-q04-case-input-1"
+      ],
+      "initialValues": {
+        "offset": 3,
+        "seconds": 4
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q05",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Настройка ведения журнала",
+    "returnSlide": "s06-07-server-log-q05-case",
+    "context": "Для диагностики временно выбран уровень 3 вместо прежнего 2.",
+    "operation": "Посмотрите состав сообщений при уровнях 1, 2 и 3, затем верните прежнюю детализацию в модели.",
+    "solution": "Смена уровня меняет видимость выбранных сообщений; исходные условия и настройки фиксируются.",
+    "model": {
+      "type": "logConfiguration"
+    },
+    "condition": {
+      "context": "Для диагностики временно выбран уровень 3 вместо прежнего 2.",
+      "task": "Посмотрите состав сообщений при уровнях 1, 2 и 3, затем верните прежнюю детализацию в модели.",
+      "inputSlides": [
+        "s06-07-server-log-q05-case-input-1"
+      ],
+      "initialValues": {
+        "level": 3,
+        "restore": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q06",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Поиск первопричины",
+    "returnSlide": "s06-07-server-log-q06-case",
+    "context": "Добавлена неизвестная опция study_option=1; рабочая копия ini сохранена.",
+    "operation": "Прочитайте диагностический фрагмент, исправьте конфигурационное условие и повторите проверку.",
+    "solution": "Код успешной валидации после устранения опции проверяет гипотезу; реальный запуск и SQL остаются отдельными этапами.",
+    "model": {
+      "type": "logCause"
+    },
+    "condition": {
+      "context": "Добавлена неизвестная опция study_option=1; рабочая копия ini сохранена.",
+      "task": "Прочитайте диагностический фрагмент, исправьте конфигурационное условие и повторите проверку.",
+      "inputSlides": [
+        "s06-07-server-log-q06-case-input-1"
+      ],
+      "initialValues": {
+        "config": "изменённая",
+        "unknown": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q07",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Корреляция с действиями",
+    "returnSlide": "s06-07-server-log-q07-case",
+    "context": "Имеются два ini; только один указан в регистрации службы. В обоих недавно были изменения.",
+    "operation": "Выберите фактически читаемый файл, сопоставьте изменения и диагностические записи, затем повторите контроль.",
+    "solution": "Причина ищется в действующем контексте, а не во всех недавно изменённых файлах сразу.",
+    "model": {
+      "type": "logCorrelation"
+    },
+    "condition": {
+      "context": "Имеются два ini; только один указан в регистрации службы. В обоих недавно были изменения.",
+      "task": "Выберите фактически читаемый файл, сопоставьте изменения и диагностические записи, затем повторите контроль.",
+      "inputSlides": [
+        "s06-07-server-log-q07-case-input-1"
+      ],
+      "initialValues": {
+        "edited": "study.ini",
+        "bad": "да"
+      }
+    }
+  },
+  {
+    "id": "s06-07-server-log-q08",
+    "lectureId": "s06-07-server-log",
+    "semester": 6,
+    "title": "Закрытие инцидента",
+    "returnSlide": "s06-07-server-log-q08-case",
+    "context": "Конфигурация исправлена, но последовательно могут не пройти запуск, вход или прикладной SELECT.",
+    "operation": "Пройдите полный контроль после исправления, устраните непрошедший этап и соберите итоговую запись.",
+    "solution": "Закрытие опирается на все необходимые проверки исходного отказа; результат одного уровня не подменяет остальные.",
+    "model": {
+      "type": "logClosure"
+    },
+    "condition": {
+      "context": "Конфигурация исправлена, но последовательно могут не пройти запуск, вход или прикладной SELECT.",
+      "task": "Пройдите полный контроль после исправления, устраните непрошедший этап и соберите итоговую запись.",
+      "inputSlides": [
+        "s06-07-server-log-q08-case-input-1"
+      ],
+      "initialValues": {
+        "start": "да",
+        "login": "нет",
+        "query": "нет"
+      }
+    }
+  }
+]
