@@ -1,7 +1,7 @@
 @font-face{font-family:Raleway;src:url('/fonts/raleway-cyrillic.woff2') format('woff2');font-weight:100 900;font-display:swap}
 
 .scenario-graph{margin:18px 0}.scenario-graph svg{display:block;width:100%;min-width:460px}.scenario-graph{overflow-x:auto}.scenario-graph text{fill:var(--ig-ink);font:16px Raleway,Arial,sans-serif}.graph-edge{fill:none;stroke:var(--ig-muted);stroke-width:1.8}.scenario-graph [data-focus=true] .graph-edge{stroke:var(--ig-accent);stroke-width:2.5}.scenario-graph [data-focus=true] text{fill:var(--ig-accent)}.graph-node{height:100%;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:12px;border:1px solid var(--ig-line);border-radius:8px;background:var(--ig-paper);font:15px Raleway,Arial,sans-serif;color:var(--ig-ink);text-align:center}.graph-node strong{font-weight:600;font-size:18px}.scenario-graph figcaption{font-size:14px;color:var(--ig-muted);text-align:center}
-.slide-frame .scenario-graph svg{height:180px;min-width:0}.slide-frame .scenario-graph{margin:10px 0}
+.slide-frame .scenario-graph svg{height:260px;min-width:0}.slide-frame .scenario-graph{margin:10px 0}
 
 /* Shared diagram roles from lecture-infographics/references/design.md. */
 :is(.learning-visual,.course-visual,.case-workshop,.diagram-workspace){
