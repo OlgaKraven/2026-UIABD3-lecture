@@ -2159,7 +2159,7 @@
           "id": "s06-01-client-server-admin-role-questions",
           "kind": "questions",
           "kicker": "Клиент, сервер и роль администратора",
-          "title": "Вопросы по разбору",
+          "title": "Вопросы к аудитории",
           "bullets": [
             "Почему одной проверки формы недостаточно?",
             "Что завершает выдачу права отчётчику?",
@@ -4406,7 +4406,7 @@
           "id": "s06-02-install-initial-configuration-questions",
           "kind": "questions",
           "kicker": "Установка и первичная настройка MySQL",
-          "title": "Вопросы по разбору",
+          "title": "Вопросы к аудитории",
           "bullets": [
             "Что подтверждает команда mysql --version?",
             "Что нужно сделать перед зависимым SQL после Start-Service?",
@@ -6567,7 +6567,7 @@
           "id": "s06-03-server-connections-questions",
           "kind": "questions",
           "kicker": "Подключения и диагностика отказов",
-          "title": "Вопросы по разбору",
+          "title": "Вопросы к аудитории",
           "bullets": [
             "Что подтверждает успешный ping?",
             "Какая команда показывает именно версию сервера?",
@@ -8744,7 +8744,7 @@
           "id": "s06-04-users-and-privileges-questions",
           "kind": "questions",
           "kicker": "Учётные записи и наименьшие привилегии",
-          "title": "Вопросы по разбору",
+          "title": "Вопросы к аудитории",
           "bullets": [
             "Что входит в полное имя учётной записи MySQL?",
             "Что следует из разрешённого SELECT?",
@@ -10945,7 +10945,7 @@
           "id": "s06-05-data-placement-questions",
           "kind": "questions",
           "kicker": "Размещение, кодировки и объём данных",
-          "title": "Вопросы по разбору",
+          "title": "Вопросы к аудитории",
           "bullets": [
             "Что означает CREATE SCHEMA в MySQL?",
             "Что вернёт OCTET_LENGTH для Я🙂 в utf8mb4?",
@@ -13337,7 +13337,7 @@
           "id": "s06-06-transactions-locks-deadlocks-questions",
           "kind": "questions",
           "kicker": "Блокировки, ожидания и взаимные блокировки",
-          "title": "Вопросы по разбору",
+          "title": "Вопросы к аудитории",
           "bullets": [
             "Отменяет ли ROLLBACK уже завершённый COMMIT?",
             "Что InnoDB откатывает при обнаруженном deadlock?",
@@ -15487,7 +15487,7 @@
           "id": "s06-07-server-log-questions",
           "kind": "questions",
           "kicker": "Журнал сервера и разбор неисправности",
-          "title": "Вопросы по разбору",
+          "title": "Вопросы к аудитории",
           "bullets": [
             "Какой источник прежде всего относится к отказу запуска mysqld?",
             "К какому узлу относится путь log_error удалённого MySQL?",

@@ -7,7 +7,7 @@
     "dev": "vite",
     "generate:qr": "node scripts/generate-qr.mjs",
     "typecheck": "tsc -b",
-    "lint": "oxlint src scripts tests",
+    "lint": "oxlint src scripts tests engine-extension/navigation-label.js engine-extension/matching-choice.jsx engine-extension/build-matching-choice.mjs",
     "test": "vitest run",
     "spellcheck": "node scripts/spellcheck.mjs",
     "build": "node scripts/build-course.mjs && node scripts/clarify-case-conditions.mjs && node scripts/package-stand.mjs && npm run validate:content && tsc -b && vite build && node scripts/build-offline.mjs",

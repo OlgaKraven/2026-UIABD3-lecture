@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-25",
+  "courseId": "uiabd3",
+  "sourceSha256": "09e9ebffd04388a9e615294356c0c82961802911f72497ac0251a6e68d8334e8",
+  "checks": {
+    "course": "uiabd3",
+    "tocNumbers": 8,
+    "search": true,
+    "presenterOutline": true,
+    "mouse": true,
+    "keyboard": true,
+    "expandedListInAudience": true,
+    "highlightInAudience": true,
+    "committedValueInAudience": true,
+    "lateAudience": true,
+    "escapeKeepsValue": true,
+    "outsideCloses": true,
+    "deliberateReveal": true,
+    "mobile": [
+      390,
+      320
+    ],
+    "darkTheme": true,
+    "audienceQuestionHeadings": 7,
+    "errors": []
+  },
+  "printLayout": [
+    {
+      "lecture": "s06-01-client-server-admin-role",
+      "pages": 119,
+      "issues": []
+    },
+    {
+      "lecture": "s06-02-install-initial-configuration",
+      "pages": 128,
+      "issues": []
+    },
+    {
+      "lecture": "s06-03-server-connections",
+      "pages": 121,
+      "issues": []
+    },
+    {
+      "lecture": "s06-04-users-and-privileges",
+      "pages": 123,
+      "issues": []
+    },
+    {
+      "lecture": "s06-05-data-placement",
+      "pages": 125,
+      "issues": []
+    },
+    {
+      "lecture": "s06-06-transactions-locks-deadlocks",
+      "pages": 132,
+      "issues": []
+    },
+    {
+      "lecture": "s06-07-server-log",
+      "pages": 123,
+      "issues": []
+    }
+  ],
+  "unitTests": 13
+}

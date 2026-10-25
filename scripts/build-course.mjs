@@ -67,7 +67,7 @@ for(const [li,topic] of baseline.topics.entries()){
   questions.push({questionId:cid,lectureId:id,title,slideIds:lecture.slides.slice(start).map(s=>s.id),evidenceSlideIds:[logic.id,cid+'-case']});
  }
  add('summary','summary','Связь со следующей темой',{body:lesson.bridge});
- add('questions','questions','Вопросы по разбору',{bullets:[lesson.units[0].test.prompt,lesson.units[4].test.prompt,lesson.units[7].test.prompt]},{answer:[lesson.units[0].test.explanation,lesson.units[4].test.explanation,lesson.units[7].test.explanation].join('\n')});
+ add('questions','questions','Вопросы к аудитории',{bullets:[lesson.units[0].test.prompt,lesson.units[4].test.prompt,lesson.units[7].test.prompt]},{answer:[lesson.units[0].test.explanation,lesson.units[4].test.explanation,lesson.units[7].test.explanation].join('\n')});
  course.lectures.push(lecture);
  legacy[id]={};for(const s of old){const qn=s.questionNumber||s.question||(s.kicker?.match(/Вопрос (\d+)/i)?.[1]?Number(s.kicker.match(/Вопрос (\d+)/i)[1]):NaN);let target=id+'-context';if(s.number===1)target=id+'-title';else if(s.number===3)target=id+'-literature-primary';else if(s.number===4)target=id+'-literature-additional';else if(s.number===5)target=id+'-materials';else if(Number.isInteger(qn)&&qn>=1&&qn<=8){const prefix=id+'-q'+String(qn).padStart(2,'0');target=prefix+(s.kind==='notebook'?'-notebook':s.kind==='test'?'-T01-slide':s.kind==='practice'?'-case':s.kind==='process'||s.kind==='comparison'?'-logic':'-concept')}else if(s.kind==='test')target=id+'-q08-T01-slide';else if(s.kind==='summary')target=id+'-summary';legacy[id][s.number]=target}
 }
