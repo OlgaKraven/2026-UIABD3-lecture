@@ -1,3 +1,4 @@
+import {ProjectionChoiceScope} from './projectionChoiceScope'
 import {useEffect,useRef,useState} from 'react'
 import cases from '../../authoring/cases.json'
 import {models,initialValues} from './workbenchModels'
@@ -19,5 +20,5 @@ function Workshop({base,index,onClose,readOnly,sessionId}:Omit<Props,'id'>&{inde
  useEffect(()=>{const previous=document.title;document.title=item.title+' · Рабочая схема';return()=>{document.title=previous}},[item.title])
  const back=`${base}?lecture=${item.lectureId}&slide=${item.returnSlide}`
  const theme=()=>{const next=state.theme==='dark'?'light':'dark';setState({...state,theme:next});try{localStorage.setItem(`lecture:${base}:uiabd3:theme`,JSON.stringify(next))}catch{/* Visible theme remains available. */}window.dispatchEvent(new Event('course-theme'))}
- return <main className="case-workshop case-demo"><header>{!onClose&&<a href={back}>← К условию на слайде</a>}<span>6 семестр</span>{!audience&&<button onClick={theme}>{state.theme==='dark'?'Светлая тема':'Тёмная тема'}</button>}</header><h1>{item.title}</h1><OperationWorkbench model={model} state={state} onChange={change} onUndo={undo} canUndo={canUndo} audience={audience} lockConfig={config}/>{!onClose&&<footer><a href={back}>К условию на слайде →</a></footer>}</main>
+ return <main className="case-workshop case-demo"><header>{!onClose&&<a href={back}>← К условию на слайде</a>}<span>6 семестр</span>{!audience&&<button onClick={theme}>{state.theme==='dark'?'Светлая тема':'Тёмная тема'}</button>}</header><h1>{item.title}</h1><ProjectionChoiceScope value={item.id}><OperationWorkbench model={model} state={state} onChange={change} onUndo={undo} canUndo={canUndo} audience={audience} lockConfig={config}/></ProjectionChoiceScope>{!onClose&&<footer><a href={back}>К условию на слайде →</a></footer>}</main>
 }

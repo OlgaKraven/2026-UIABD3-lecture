@@ -1,3 +1,4 @@
+import {ProjectionChoice} from './ProjectionChoice'
 import {useState} from 'react'
 import {ScenarioBoard} from './ScenarioBoard'
 import {table} from './workbenchModels'
@@ -13,6 +14,6 @@ export function LockWorkbench({state,onChange,readOnly}:{state:LockState;onChang
  <p className="visual-caption">Стрелка «ожидающий → владелец» обозначает зависимость, а не передачу данных. {edges.length?'Выбранный ресурс удерживается до завершения транзакции.':'В текущем состоянии ожиданий строк нет.'}</p>
  {state.lastCycle.length>0&&<div className="lock-cycle"><strong>Обнаруженный цикл до отката</strong>{state.lastCycle.map(x=><p key={x}><code>{x}</code></p>)}</div>}
  {state.lastRead&&<p role="status"><code>{state.lastRead.actor}: {state.lastRead.kind}, PK {state.lastRead.key} → {state.lastRead.value}</code></p>}
- {!readOnly&&<><div className="workbench-fields lock-select"><label>Сеанс<select aria-label="Сеанс" value={actor} onChange={e=>setActor(e.target.value as Actor)}>{actors.map(a=><option key={a}>{a}</option>)}</select></label><label>PK<select aria-label="PK" value={key} onChange={e=>setKey(Number(e.target.value))}>{keys.map(k=><option key={k}>{k}</option>)}</select></label></div><div className="workbench-actions">{commands.map(op=><button key={op} onClick={()=>onChange(command(state,actor,op,key))}>{op}</button>)}</div></>}
+ <div className="workbench-fields lock-select"><label>Сеанс<ProjectionChoice label="Сеанс" value={actor} options={actors} readOnly={readOnly} onChange={value=>setActor(value as Actor)}/></label><label>PK<ProjectionChoice label="PK" value={String(key)} options={keys.map(String)} readOnly={readOnly} onChange={value=>setKey(Number(value))}/></label></div>{!readOnly&&<><div className="workbench-actions">{commands.map(op=><button key={op} onClick={()=>onChange(command(state,actor,op,key))}>{op}</button>)}</div></>}
  <details open={!readOnly}><summary>Журнал операций</summary><ol className="lock-log">{state.log.map((x,i)=><li key={i}><code>{x}</code></li>)}</ol></details></section>
 }
