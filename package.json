@@ -10,12 +10,13 @@
     "lint": "oxlint src scripts tests engine-extension/navigation-label.js engine-extension/matching-choice.jsx engine-extension/build-matching-choice.mjs",
     "test": "vitest run",
     "spellcheck": "node scripts/spellcheck.mjs",
-    "build": "node scripts/build-course.mjs && node scripts/clarify-case-conditions.mjs && node scripts/package-stand.mjs && npm run validate:content && tsc -b && vite build && node scripts/build-offline.mjs",
+    "build": "node scripts/build-course.mjs && node scripts/clarify-case-conditions.mjs && node scripts/package-stand.mjs && npm run validate:content && npm run validate:teacher && tsc -b && vite build && node scripts/build-offline.mjs",
     "preview": "vite preview",
     "export:pdf": "node scripts/export-pdf.mjs",
     "check:pdf": "node scripts/check-pdf.mjs",
     "validate:content": "node scripts/validate-course.mjs",
-    "check:privacy": "node scripts/check-course-privacy.mjs"
+    "check:privacy": "node scripts/check-course-privacy.mjs",
+    "validate:teacher": "node scripts/validate-teacher-cases.mjs && node scripts/validate-teacher-locks.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.38.0",
